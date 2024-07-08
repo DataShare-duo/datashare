@@ -25,6 +25,7 @@ print("polars 版本：",pl.__version__)
 
 # 示例
 **数值类型  Numerics**
+
 浮点型数值转换为整型时，会向下取整；大范围的数据类型转换为小范围数据类型时，如果数值溢出时，默认会报错，如果设置了 `strict=False`，则会被置为 `null`
 ```python
 df = pl.DataFrame(
@@ -113,6 +114,7 @@ shape: (5, 1)
 └──────────────┘
 ```
 <br/>
+
 **字符串类型  Strings**
 ```python
 df = pl.DataFrame(
@@ -192,7 +194,9 @@ shape: (5, 1)
 └───────────────────┘
 ```
 <br/>
+
 **布尔类型  Booleans**
+
 数值型与布尔型可以相互转换，但是不允许字符型转换为布尔型
 ```python
 df = pl.DataFrame(
@@ -235,7 +239,9 @@ shape: (5, 2)
 └──────────┴────────┘
 ```
 <br/>
+
 **时间类型  Dates**
+
 `Date` 或 `Datetime` 等时间数据类型表示为自纪元（1970年1月1日）以来的天数（`Date`）和微秒数（`Datetime`），因此数值类型与时间数据类型能直接相互转换
 
 字符串类型与时间类型，可以通过 dt.to_string、str.to_datetime进行相互转换

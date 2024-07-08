@@ -1,0 +1,16 @@
+[book]
+authors = ["DataShare_duo"]
+language = "zh-CN"
+multilingual = false
+src = "src"
+title = "DataShare"
+description = "一枚热爱技术的数据分析师，同时也热爱分享技术，欢迎大家多多交流，共同进步，微信公众号：DataShare"
+
+
+
+[output.html]
+additional-css = ["blog.css"]
+mathjax-support = true
+additional-js = ["assets/fzf.umd.js", "assets/elasticlunr.js"]
+
+

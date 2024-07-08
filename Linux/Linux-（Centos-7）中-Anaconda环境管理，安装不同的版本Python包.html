@@ -1,0 +1,273 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Linux-（Centos-7）中-Anaconda环境管理，安装不同的版本Python包 - DataShare</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="一枚热爱技术的数据分析师，同时也热爱分享技术，欢迎大家多多交流，共同进步，微信公众号：DataShare">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../blog.css">
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><div><strong aria-hidden="true">1.</strong> Python</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">1.1.</strong> polars-学习</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../polars-学习/Python-polars学习-08-分类数据处理.html"><strong aria-hidden="true">1.1.1.</strong> Python-polars学习-08-分类数据处理</a></li></ol></li></ol></li><li class="chapter-item expanded "><li class="spacer"></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> Hive</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Hive/Hive---HQL支持的2种查询语句风格，你喜欢哪一种？.html"><strong aria-hidden="true">2.1.</strong> Hive---HQL支持的2种查询语句风格，你喜欢哪一种？</a></li></ol></li><li class="chapter-item expanded "><li class="spacer"></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Linux</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Linux/Linux-（Centos-7）中-Anaconda环境管理，安装不同的版本Python包.html" class="active"><strong aria-hidden="true">3.1.</strong> Linux-（Centos-7）中-Anaconda环境管理，安装不同的版本Python包</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <span class="menu-title">DataShare</span>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <p>#硬件信息及操作系统信息
+服务器：戴尔R740
+显卡：英伟达 Tesla V100
+操作系统：CentOS Linux release 7.8.2003 (Core)
+#Anaconda安装
+从官网下载 <code>Anaconda3-2020.02-Linux-x86_64.sh</code>，运行后一步一步安装
+<img src="https://upload-images.jianshu.io/upload_images/6641583-fef60da1c790b3e7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="安装成功界面" /></p>
+<p>参考：
+<a href="https://blog.csdn.net/Gary1_Liu/article/details/81297927">https://blog.csdn.net/Gary1_Liu/article/details/81297927</a>
+<a href="https://www.jianshu.com/p/1888984cad82">https://www.jianshu.com/p/1888984cad82</a>
+#Anaconda环境管理</p>
+<ul>
+<li>克隆环境
+<code>conda create --name newname --clone oldname</code>
+例如：<code>conda create --name pytorch1.5 --clone base</code></li>
+<li>创建环境
+<code>conda create -n 环境名 python=3.7</code>
+例如：<code>conda create -n pytorch1.5 python=3.7</code></li>
+<li>激活环境
+<code>conda activate 环境名</code>
+例如：<code>conda activate pytorch1.5</code>
+<img src="https://upload-images.jianshu.io/upload_images/6641583-ad9a9f79d217566c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1040" alt="激活环境" /></li>
+<li>退出环境
+<code>conda deactivate</code></li>
+<li>对虚拟环境中安装额外的包
+<code>conda install -n your_env_name [package]</code>
+例如：<code>conda install -n pytorch1.5 pytorch==1.5.0 torchvision==0.6.0 cudatoolkit=10.2 -c pytorch</code>
+经测试后发现，只要激活了虚拟环境后，用<code>pip</code>直接安装也可以，安装的包是直接在虚拟环境里面
+例如：<code>pip install torch==1.5.0 torchvision==0.6.0</code></li>
+<li>删除环境内某个包
+<code>conda remove --name 环境名 包名</code>
+例如：<code>conda remove --name pytorch1.5  pytorch</code></li>
+<li>查看当前存在哪些虚拟环境
+<code>conda env list</code></li>
+<li>查看安装了哪些包
+<code>conda list</code></li>
+<li>检查更新当前conda
+<code>conda update conda</code></li>
+<li>删除虚拟环境
+<code>conda remove --name oldname --all</code>
+#历史相关文章</li>
+<li><a href="https://www.jianshu.com/p/da3fb867471f">Python内置的 os 模块常用函数、方法</a></li>
+<li><a href="https://www.jianshu.com/p/37f48c338fbd">Python常用语句汇总</a></li>
+</ul>
+<hr />
+<p><strong>以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号，不定期分享干货</strong>
+<img src="https://upload-images.jianshu.io/upload_images/6641583-bce6d13cc37824d7.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/240" alt="" /></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../Hive/Hive---HQL支持的2种查询语句风格，你喜欢哪一种？.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../Hive/Hive---HQL支持的2种查询语句风格，你喜欢哪一种？.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../assets/fzf.umd.js"></script>
+        <script src="../assets/elasticlunr.js"></script>
+
+
+    </div>
+    </body>
+</html>

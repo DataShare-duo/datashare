@@ -14,13 +14,14 @@
 ---
 
 - [Hive]()
-	- [Hive---HQL支持的2种查询语句风格，你喜欢哪一种？](polars-学习/Hive---HQL支持的2种查询语句风格，你喜欢哪一种？.md)
-	- [Hive-数据聚合成键值对时，根据值大小进行排序](polars-学习/Hive-数据聚合成键值对时，根据值大小进行排序.md)
-	- [Hive-中把一行记录拆分为多行记录](polars-学习/Hive-中把一行记录拆分为多行记录.md)
-	- [Hive中的常用函数](polars-学习/Hive中的常用函数.md)
-	- [Hive-中的各种常用set设置](polars-学习/Hive-中的各种常用set设置.md)
-	- [Hive中对相邻访问时间进行归并分组](polars-学习/Hive中对相邻访问时间进行归并分组.md)
-	- [Hive中各种日期格式转换方法总结](polars-学习/Hive中各种日期格式转换方法总结.md)
+	- [Hive---HQL支持的2种查询语句风格，你喜欢哪一种？](Hive/Hive---HQL支持的2种查询语句风格，你喜欢哪一种？.md)
+	- [Hive-数据聚合成键值对时，根据值大小进行排序](Hive/Hive-数据聚合成键值对时，根据值大小进行排序.md)
+	- [Hive-中把一行记录拆分为多行记录](Hive/Hive-中把一行记录拆分为多行记录.md)
+	- [Hive中的常用函数](Hive/Hive中的常用函数.md)
+	- [Hive-中的各种常用set设置](Hive/Hive-中的各种常用set设置.md)
+	- [Hive中对相邻访问时间进行归并分组](Hive/Hive中对相邻访问时间进行归并分组.md)
+	- [Hive中各种日期格式转换方法总结](Hive/Hive中各种日期格式转换方法总结.md)
+
 
 
 

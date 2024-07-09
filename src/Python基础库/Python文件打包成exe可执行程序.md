@@ -36,6 +36,7 @@ python xxx.py
 **解决方法：**一定要使用Python官网下载的原生Python程序，并且确保系统环境变量里面只有这一个Python路径，只有这一个Python路径，只有这一个Python路径！！！
 
 ***亲测自己的打包程序从200M降到50M大小***
+
 # 历史相关文章
 - [Python常用语句汇总](https://www.jianshu.com/p/37f48c338fbd)
 - [Linux （Centos 7）中 Anaconda环境管理，安装不同的版本Python包](https://www.jianshu.com/p/bc5af6c078a8)

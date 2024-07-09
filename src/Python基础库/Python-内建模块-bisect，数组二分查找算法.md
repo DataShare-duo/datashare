@@ -3,6 +3,7 @@ bisect模块提供了一种只针对 **已排序的序列** 的方法，快速�
 
 官方文档：https://docs.python.org/3/library/bisect.html#module-bisect
 函数分为 bisect、insort 两大块
+
 # 各函数详解
 - **bisect、bisect_right**
 这两个函数功能一模一样，`bisect` 是对 `bisect_right` 的引用，用于查找元素在已经排序的序列中应该插入的位置，返回值为最靠右 or 最大的索引位置

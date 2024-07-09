@@ -1,4 +1,4 @@
-#概述
+# 概述
 math模块是内置模块，提供了许多对浮点数的数学运算函数，提供类似C语言标准定义的数学函数（This module provides access to the mathematical functions defined by the C standard）
 
 包含以下 **`七部分`**函数：
@@ -9,7 +9,7 @@ math模块是内置模块，提供了许多对浮点数的数学运算函数，�
 - **双曲函数**（Hyperbolic functions）
 - **特殊函数**（Special functions）
 - **常量**（Constants）
-#math模块常用函数
+# math模块常用函数
 虽然math模块提供的函数很多，但是现阶段工作中使用的很少，下面就列出一些实际工作中常用的函数：
 
 注意：虽然math是内置模块，但使用前需要先import导入该库
@@ -134,4 +134,3 @@ import math
 - [Python Numpy中的范数](https://www.jianshu.com/p/343618e8e455)
 **************************************************************************
 **以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号，不定期分享干货**
-![](https://upload-images.jianshu.io/upload_images/6641583-bce6d13cc37824d7.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/240)

@@ -183,7 +183,9 @@ array([0.2, 0.4, 0.6, 0.8])
 - [Pythonner还在为了练习Numpy而没有真实数据而烦恼吗？](/Python数据处理/Pythonner还在为了练习Numpy而没有真实数据而烦恼吗？.md)
 **************************************************************************
 **以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号DataShare，不定期分享干货**
-
+<p align = "center">    
+	<img  src="https://datashare-duo.github.io/datashare/微信公众号.jpg" width="300" />
+</p>
 
 <script 
 	src="https://utteranc.es/client.js"

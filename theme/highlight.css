@@ -67,7 +67,10 @@
   overflow-x: auto;
   background: rgb(40,43,46);
   color: rgb(169, 183, 198);
-  padding: 0.6em;
+  padding: 0.8em;
+  line-height:27px;
+  font-family: Consolas,"Microsoft YaHei", Inconsolata, Courier, monospace !important;
+  /*letter-spacing:40px;*/
 }
 
 .hljs-emphasis {

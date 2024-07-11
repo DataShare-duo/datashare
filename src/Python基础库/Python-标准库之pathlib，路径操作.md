@@ -1,8 +1,8 @@
 # 背景
 `pathlib` 标准库是在 Python3.4 引入，到现在最近版 3.11 已更新了好几个版本，主要是用于路径操作，相比之前的路径操作方法 `os.path` 有一些优势，有兴趣的同学可以学习下
 
->**官方文档：**https://docs.python.org/zh-cn/3/library/pathlib.html
-![官方pathlib图片](https://upload-images.jianshu.io/upload_images/6641583-9e5a96f92df24f82.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+>**官方文档：** [https://docs.python.org/zh-cn/3/library/pathlib.html](https://docs.python.org/zh-cn/3/library/pathlib.html)
+![官方pathlib图片](./image/6641583-9e5a96f92df24f82.png)
 
 # 小编环境
 ```python
@@ -55,7 +55,7 @@ file.stat().st_ctime  #1695611241.5981772
 #修改时间  modify，It represents the time of most recent content modification
 file.stat().st_mtime  #1695611301.1193473
 ```
-- ##查看当前工作目录文件及文件夹
+- ## 查看当前工作目录文件及文件夹
 ```python
 for f in path.iterdir():
     print(f)
@@ -121,10 +121,10 @@ Path("pathlib_demo1.py").exists()  #True
 ```
 
 # 历史相关文章
-- [Python 记录re正则模块，方便后期查找使用](https://www.jianshu.com/p/1d0a68c10291)
-- [Python 内建模块 bisect，数组二分查找算法](https://www.jianshu.com/p/4dc970cd8505)
-- [Python 标准库heapq，堆数据结构操作详解](https://www.jianshu.com/p/9d0287109b90)
-- [Python math模块详解](https://www.jianshu.com/p/34ad567ec8ef)
+- [Python 记录re正则模块，方便后期查找使用](./Python-记录re正则模块，方便后期查找使用.md)
+- [Python 内建模块 bisect，数组二分查找算法](./Python-内建模块-bisect，数组二分查找算法.md)
+- [Python 标准库heapq，堆数据结构操作详解](./Python-标准库heapq，堆数据结构操作详解.md)
+- [Python math模块详解](./Python-math模块详解.md)
 
 **************************************************************************
 **以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号：DataShare ，不定期分享干货**

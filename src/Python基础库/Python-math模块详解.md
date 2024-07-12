@@ -21,6 +21,7 @@ math模块是内置模块，提供了许多对浮点数的数学运算函数，�
 ```python
 import math
 ```
+<br/> 
 
 - **math.ceil(x)----------向上取整**
 
@@ -34,6 +35,7 @@ import math
 >>> math.ceil(-3.1)
 -3
 ```
+<br/> 
 
 - **math.floor(x)----------向下取整**
 
@@ -47,6 +49,7 @@ import math
 >>> math.floor(-2.8)
 -3
 ```
+<br/> 
 
 - **math.exp(x)----------e的x次方，其中 e = 2.718281… 是自然对数的基数**
 
@@ -58,6 +61,7 @@ import math
 >>> math.exp(0)
 1.0
 ```
+<br/> 
 
 - **math.log(x,base=e)---------- 默认返回x 的自然对数,默认底为 e，如果指定底，返回指定底的对数**
 
@@ -75,6 +79,7 @@ import math
 >>> math.log(100,base=10)
 2.0
 ```
+<br/> 
 
 - **math.pow(x, y)---------- x 的 y 次幂**
 
@@ -86,6 +91,7 @@ import math
 >>> math.pow(-5,2)
 25.0
 ```
+<br/> 
 
 - **math.sqrt(x)---------- x 的算术平方根，也就是正数的平方根**
 
@@ -97,6 +103,7 @@ import math
 >>> math.sqrt(10)
 3.1622776601683795
 ```
+<br/> 
 
 - **math.pi---------- 常量π，15位小数**
 
@@ -104,6 +111,7 @@ import math
 >>> math.pi
 3.141592653589793
 ```
+<br/> 
 
 - **math.e---------- 常量e，15位小数**
 
@@ -111,6 +119,7 @@ import math
 >>> math.e
 2.718281828459045
 ```
+<br/> 
 
 - **math.sin(x)---------- x弧度的正弦值**
 
@@ -124,6 +133,7 @@ import math
 >>> math.sin(math.pi/4)
 0.7071067811865476
 ```
+<br/> 
 
 - **math.cos(x)---------- x弧度的余弦值**
 
@@ -135,6 +145,7 @@ import math
 >>> math.cos(math.pi/4)  
 0.7071067811865476
 ```
+<br/> 
 
 - **math.degrees(x)----------将角度 x 从弧度转换为度数**
 
@@ -146,6 +157,7 @@ import math
 >>> math.degrees(math.pi/6)    #近似30
 29.999999999999996
 ```
+<br/> 
 
 - **math.radians(x)----------将角度 x 从度数转换为弧度**
 
@@ -161,10 +173,9 @@ import math
 *度数、弧度概念可参考历史相关文章，有详细说明*
 
 # 历史相关文章
+- [利用Python计算两个地理位置之间的中点](../Python数据处理/利用Python计算两个地理位置之间的中点.md)
+- [Python Numpy中的范数](../Python数据处理/Python--Numpy中的范数.md)
 
-- [利用Python计算两个地理位置之间的中点](https://www.jianshu.com/p/6aab31abeb18)
-- [Python Numpy中的范数](https://www.jianshu.com/p/343618e8e455)
-
----
+------
 
 **以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号，不定期分享干货**

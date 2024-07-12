@@ -80,7 +80,7 @@ ul, ol {
 }
 ul{ /*无序列表*/
     list-style-type: disc;
-    padding:0px 20px 10px;
+    padding:0px 20px 0px;
 }
 ol { /*有序列表*/
   list-style-type: decimal;

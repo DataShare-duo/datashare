@@ -3,7 +3,7 @@
 
 具体的底层细节这里不做过多介绍，感兴趣的同学可以看一下这篇文章：
 **《为什么Python 3.6以后字典有序并且效率更高？》**
-地址：https://zhuanlan.zhihu.com/p/73426505
+地址：[https://zhuanlan.zhihu.com/p/73426505](https://zhuanlan.zhihu.com/p/73426505)
 
 >*该文章的评论精彩评论：*
 一句话解释：从Python3.6开始，dict的实现由 **哈希表** 改成 **链式哈希表**
@@ -59,11 +59,11 @@ print(dic)
 **经过添加、删除操作可以看出，字典是按添加键值对时的先后顺序保存数据，是有序的**
 
 # 历史相关文章
-- [Python 标准库之pathlib，路径操作](https://www.jianshu.com/p/9df296b7b0c5)
-- [Python 记录re正则模块，方便后期查找使用](https://www.jianshu.com/p/1d0a68c10291)
-- [Python 内建模块 bisect，数组二分查找算法](https://www.jianshu.com/p/4dc970cd8505)
-- [Python 标准库heapq，堆数据结构操作详解](https://www.jianshu.com/p/9d0287109b90)
-- [Python math模块详解](https://www.jianshu.com/p/34ad567ec8ef)
+- [Python 标准库之pathlib，路径操作](./Python-标准库之pathlib，路径操作.md)
+- [Python 记录re正则模块，方便后期查找使用](./Python-记录re正则模块，方便后期查找使用.md)
+- [Python 内建模块 bisect，数组二分查找算法](./Python-内建模块-bisect，数组二分查找算法.md)
+- [Python 标准库heapq，堆数据结构操作详解](./Python-标准库heapq，堆数据结构操作详解.md)
+- [Python math模块详解](./Python-math模块详解.md)
 
 **************************************************************************
 **以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号：DataShare ，不定期分享干货**

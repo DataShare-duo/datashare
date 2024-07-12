@@ -1,9 +1,9 @@
 # 背景
 如果需要访问远程服务器的Mysql数据库，但是该Mysql数据库为了安全期间，安全措施设置为只允许本地连接（也就是你需要登录到该台服务器才能使用），其他远程连接是不可以直接访问，并且相应的端口也做了修改，那么就需要基于ssh来连接该数据库。这种方式连接数据库与Navicat里面界面化基于ssh连接一样。
 
-![Navicat](https://upload-images.jianshu.io/upload_images/6641583-a90b2c8a6726d5f9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Navicat](./image/6641583-a90b2c8a6726d5f9.webp)
 
-![连接数据库](https://upload-images.jianshu.io/upload_images/6641583-622054202aa23f1b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![连接数据库](./image/6641583-622054202aa23f1b.webp)
 
 # 安装支持库
 - 如果要连接Mysql，首先需要安装pymysql
@@ -77,7 +77,7 @@ def mysql_ssh(sql,args=None):
 这些一定要规范使用，防止不必要的bug
 - 传入参数时建议用这种方式`cursor.execute(sql,args)`，防止sql注入的风险
 # 历史相关文章
-- [Python加载txt数据乱码问题升级版解决方法](https://www.jianshu.com/p/e2572f67c983)
-- [Python文件打包成exe可执行程序](https://www.jianshu.com/p/f582fb4ce808)
+- [Python加载txt数据乱码问题升级版解决方法](../Python数据处理/Python加载txt数据乱码问题升级版解决方法.md)
+- [Python文件打包成exe可执行程序](./Python文件打包成exe可执行程序.md)
 **************************************************************************
 **以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注 DataShare （同微），不定期分享干货**

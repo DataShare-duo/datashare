@@ -3,12 +3,12 @@
 
 小编对扑克牌的排序进行了简单修改，使相同大小的牌放在一起
 
->《Python - 100天从新手到大师》，感兴趣的同学可以去学习该教程
+>《Python - 100天从新手到大师》，感兴趣的同学可以去学习该教程 <br/>
 地址：https://github.com/jackfrued/Python-100-Days
 
 # 发牌结果
 
-![发牌结果](https://upload-images.jianshu.io/upload_images/6641583-2ccfc95166690490.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![发牌结果](./image/6641583-2ccfc95166690490.png)
 
 
 # 小编环境
@@ -123,9 +123,9 @@ if __name__ == '__main__':
 ```
 
 # 历史相关文章
-- [Python 标准库之pathlib，路径操作](https://www.jianshu.com/p/9df296b7b0c5)
-- [Python 记录re正则模块，方便后期查找使用](https://www.jianshu.com/p/1d0a68c10291)
-- [Python 内建模块 bisect，数组二分查找算法](https://www.jianshu.com/p/4dc970cd8505)
+- [Python 标准库之pathlib，路径操作](./Python-标准库之pathlib，路径操作.md)
+- [Python 记录re正则模块，方便后期查找使用](./Python-记录re正则模块，方便后期查找使用.md)
+- [Python 内建模块 bisect，数组二分查找算法](./Python-内建模块-bisect，数组二分查找算法.md)
 
 **************************************************************************
 **以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号：DataShare ，不定期分享干货**

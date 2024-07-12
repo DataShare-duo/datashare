@@ -3,8 +3,8 @@
 
 **官方文档**：https://docs.python.org/zh-cn/3/library/re.html
 
->**Excelhome精选正则文章**
-正则文章：[正则表达式入门与提高---VBA平台的正则学习参考资料](https://club.excelhome.net/thread-1128647-1-3.html)
+>**Excelhome精选正则文章** <br/>
+正则文章：[正则表达式入门与提高---VBA平台的正则学习参考资料](https://club.excelhome.net/thread-1128647-1-3.html) <br/>
 地址：https://club.excelhome.net/thread-1128647-1-3.html
 
 # 环境与正则库版本
@@ -108,10 +108,10 @@ print(matches2)  #[]
 ***本篇文章只介绍了几个常用的方法，重点是方法的含义，而没有介绍元字符相关的内容，如果对正则表达式感兴趣，可以深入学习拓展知识范围***
 
 # 历史相关文章
-- [Python 内建模块 bisect，数组二分查找算法](https://www.jianshu.com/p/4dc970cd8505)
-- [Python 标准库heapq，堆数据结构操作详解](https://www.jianshu.com/p/9d0287109b90)
-- [Python math模块详解](https://www.jianshu.com/p/34ad567ec8ef)
-- [Python内置的 os 模块常用函数、方法](https://www.jianshu.com/p/da3fb867471f)
+- [Python 内建模块 bisect，数组二分查找算法](./Python-内建模块-bisect，数组二分查找算法.md)
+- [Python 标准库heapq，堆数据结构操作详解](./Python-标准库heapq，堆数据结构操作详解.md)
+- [Python math模块详解](./Python-math模块详解.md)
+- [Python内置的 os 模块常用函数、方法](./Python内置的-os-模块常用函数、方法.md)
 
 **************************************************************************
 **以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号：DataShare ，不定期分享干货**

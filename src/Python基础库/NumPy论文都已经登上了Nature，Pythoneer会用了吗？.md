@@ -11,7 +11,7 @@ NumPy（Numerical Python）诞生已经过去了 15 年，前一段时间NumPy �
 
 下面为大家介绍一些Numpy的常用基础
 # Numpy基础
-- **安装**
+- **安装** <br/>
 由于Numpy是第三方库，默认是不集成在Python里面，所以就需要手动安装一下：
 如果你安装的是Anaconda，那么就不用再安装了，请忽略
 如果你是从官方网站下载的Python，那么你就需要手动安装一下这个库
@@ -20,12 +20,12 @@ NumPy（Numerical Python）诞生已经过去了 15 年，前一段时间NumPy �
 pip install numpy -i https://mirrors.aliyun.com/pypi/simple/   
 ```
 
-- **导入**
+- **导入** <br/>
 默认成规，`numpy`导入后命名为 `np`，所以在python脚本（程序）里面看见`np`一般都是代表`numpy`
 ```python
 import numpy as np   
 ```
-- **认识Ndarray**
+- **认识Ndarray** <br/>
 计算机里面能计算的就是数字，也就是数学里面的各种数字，我们都知道数学里面的数组可以有多层，也就是多维，1维就是向量，2维就是矩阵，3维就是$x y z$坐标轴构成的空间（形象理解），但体现在`numpy`中就是N 维数组对象 `ndarray`，它是一系列同类型数据的集合。
 
 *1维：*
@@ -51,7 +51,7 @@ import numpy as np
 >>> b.ndim
 2
 ```
-- **切片和索引**
+- **切片和索引** <br/>
 切片、索引与python内置的列表、字符串的切片和索引基本一样，如果理解了列表的切片和索引，那么`ndarray`对象就不在话下
 ```python
 >>> import numpy as np
@@ -125,7 +125,7 @@ array([[ 0,  4,  8],
        [ 2,  6, 10],
        [ 3,  7, 11]])
 ```
-***数组连接***
+***数组连接*** <br/>
 `concatenate`、`stack`、`hstack`、`vstack`这个几个函数均是数组连接，原理基本都一样，只要理解了其中一个，其他的都很好理解，这里只介绍`concatenate`
 ```python
 >>> import numpy as np

@@ -1,7 +1,8 @@
 由于身边同事经常买双色球，时间长了也就慢慢关注这个，我们中午经常也一块去吃饭，然后去彩票站点。之前是在支付宝上面就可以买，那会自己也会偶尔买10元的。这片文章主要是爬取了历史双色球所有数据，并进行简单分析，纯属业余爱好，分析结果仅供参考。
 
-#1.数据爬取网页：[历史双色球数据](https://datachart.500.com/ssq/)
-```
+# 1.数据爬取网页
+历史双色球数据：[https://datachart.500.com/ssq/](https://datachart.500.com/ssq/)
+```python
  #分析网页后可以得知get历史所有数据的参数
 url='https://datachart.500.com/ssq/history/newinc/history.php?start=03001'  
 
@@ -37,12 +38,12 @@ col=['期号','红球1','红球2','红球3','红球4','红球5','红球6','蓝�
 df_all=pd.DataFrame(all_numbers,columns=col)
 df_all.head()
 ```
-![双色球1.png](https://upload-images.jianshu.io/upload_images/6641583-4716c2fe2288659f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![双色球](./images/6641583-4716c2fe2288659f.webp)
 
 
 
-#2.数据转换
-```
+# 2.数据转换
+```python
 #日期转换
 df_all['开奖日期_dt']=pd.to_datetime(df_all['开奖日期'])
 df_all['year']=df_all['开奖日期_dt'].dt.year
@@ -51,9 +52,9 @@ df_all['day']=df_all['开奖日期_dt'].dt.day
 df_all['weekday']=df_all['开奖日期_dt'].dt.weekday_name
 df_all.head()
 ```
-![双色球2.png](https://upload-images.jianshu.io/upload_images/6641583-1c3702d169feb1e2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![双色球2.png](./images/6641583-1c3702d169feb1e2.webp)
 
-```
+```python
 #one-hot 编码转换自定义函数
 def lotterydata(df):
     modeldata=df.copy()
@@ -92,10 +93,10 @@ def lotterydata(df):
 modeldata=lotterydata(df_all)
 modeldata.head()
 ```
-![双色球3.png](https://upload-images.jianshu.io/upload_images/6641583-4a67bb2750cd7ea6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![双色球3.png](./images/6641583-4a67bb2750cd7ea6.webp)
 
-#3.数据分析与展示
-```
+# 3.数据分析与展示
+```python
 allhistorydata=modeldata.iloc[:,-49:].copy()
 
 #历史所有红球和蓝球数据
@@ -178,9 +179,10 @@ plt.show()
 
 ```
 
-                                     最终的数据展示结果，仅供参考！！！
+**最终的数据展示结果，仅供参考！！！**
 
-![数据展示结果](https://upload-images.jianshu.io/upload_images/6641583-359b28ee2b63a0e7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![数据展示结果](./images/6641583-359b28ee2b63a0e7.webp)
 
-
+**************************************************************************
+**以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号：DataShare ，不定期分享干货**
 

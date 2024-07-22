@@ -3,11 +3,11 @@ Excel里面数据透视表可谓是功能强大，可以对数据进行去重，
 
 当然在Python里面也有数据透视函数，但是没有Excel这么灵活，比如今天要介绍的这种情况，在值里面要一列放聚合的求和，一列放聚合后的占比，这在Excel里面可以非常方便的利用数据透视表的功能 **值显示方式** 来解决，今天这篇文章利用 **自定义函数** 来实现这个功能。
 # 模拟数据
-![模拟数据](https://upload-images.jianshu.io/upload_images/6641583-22e8f904b3ca137f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1040)
+![模拟数据](./images/6641583-22e8f904b3ca137f.webp)
 # 需要类似Excel数据透视表的结果
-![Excel数据透视表](https://upload-images.jianshu.io/upload_images/6641583-6f33c0be9d3e81cf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1040)
+![Excel数据透视表](./images/6641583-6f33c0be9d3e81cf.webp)
 # 自定义函数
-利用pandas的 **[pivot_table](https://www.jianshu.com/p/d6782830fe62)** 函数可以实现求和功能，然后再让该列值除以总和来实现占比的功能
+利用pandas的 **pivot_table** 函数可以实现求和功能，然后再让该列值除以总和来实现占比的功能
 ```python
 def pivot_percent(df, index, value, decimal=2):
     '''
@@ -34,9 +34,9 @@ def pivot_percent(df, index, value, decimal=2):
     return data_result
 ```
 # jupyter notebook 完成代码
-![jupyter notebook](https://upload-images.jianshu.io/upload_images/6641583-2ae140d750973faf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1040)
+![jupyter notebook](./images/6641583-2ae140d750973faf.webp)
 # 历史相关文章
-- [像excel透视表一样使用pandas透视函数](https://www.jianshu.com/p/d6782830fe62)
-- [对比Excel，利用pandas进行数据分析各种用法](https://www.jianshu.com/p/7d2530533762)
+- [像excel透视表一样使用pandas透视函数](./像excel透视表一样使用pandas透视函数.md)
+- [对比Excel，利用pandas进行数据分析各种用法](./对比Excel，利用pandas进行数据分析各种用法.md)
 **************************************************************************
 **以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号：DataShare ，不定期分享干货**

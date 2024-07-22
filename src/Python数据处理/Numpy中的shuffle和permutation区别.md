@@ -3,4 +3,7 @@
 - 由于permutation会复制数据，所以当数据量特别大的时候，使用shuffle的效率更高。
 - 无论是`shuffle`还是`permutation`对二维及以上数据，都是只对**第一维进行打乱顺序**，第二维中的顺序并不会打乱。
 # 示例
-![示例](https://upload-images.jianshu.io/upload_images/6641583-114773a39b850879.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![示例](./images/6641583-114773a39b850879.webp)
+
+**************************************************************************
+**以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号：DataShare ，不定期分享干货**

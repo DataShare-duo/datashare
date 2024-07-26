@@ -1,7 +1,7 @@
 # 背景
 在Python数据处理与分析中，大家在处理数据时，使用的基本都是 `Pandas` ，该库非常好用。随着 Rust 的出圈，基于其开发的 `Polars` 库，逐渐赢得大家的喜爱，在某些功能上更优于 `Pandas`。于是小编在自学的过程中，逐步整理一些资料供大家参考学习，这些资料会分享到github
 
-仓库地址：https://github.com/DataShare-duo/polars_learn
+仓库地址：[https://github.com/DataShare-duo/polars_learn](https://github.com/DataShare-duo/polars_learn)
 
 PS：为了学习 `Polars`，小编先了解一遍 Rust，《Rust权威指南》
 
@@ -74,9 +74,9 @@ data_csv.write_csv('./data/data_write.csv')
 data_csv.write_excel('./data/data_write.xlsx',float_precision=1)
 ```
 # 历史相关文章
-- [Python pandas遍历行数据的2种方法](https://www.jianshu.com/p/9b4596949f62)
-- [Python 利用pandas对数据进行特定排序](https://www.jianshu.com/p/8cee0d657696)
-- [Python pandas.str.replace 不起作用](https://www.jianshu.com/p/b8e9ddee3b04)
+- [Python pandas遍历行数据的2种方法](../Python数据处理/Python-pandas遍历行数据的2种方法.md)
+- [Python 利用pandas对数据进行特定排序](../Python数据处理/Python-利用pandas对数据进行特定排序.md)
+- [Python pandas.str.replace 不起作用](../Python数据处理/Python-pandas-str-replace-不起作用.md)
 
 **************************************************************************
 **以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号：DataShare ，不定期分享干货**

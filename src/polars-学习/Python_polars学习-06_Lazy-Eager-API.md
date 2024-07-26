@@ -1,10 +1,11 @@
 # 背景
-polars学习系列文章，第6篇 Lazy / Eager API
-**Lazy：**延迟、惰性
-**Eager：**即时、实时
+polars学习系列文章，第6篇 Lazy / Eager API <br/>
+**Lazy：** 延迟、惰性<br/>
+**Eager：** 即时、实时
 
 该系列文章会分享到github，大家可以去下载jupyter文件，进行参考学习
-仓库地址：https://github.com/DataShare-duo/polars_learn
+
+仓库地址：[https://github.com/DataShare-duo/polars_learn](https://github.com/DataShare-duo/polars_learn)
 
 # 小编运行环境
 ```python
@@ -82,11 +83,11 @@ print(df)
 ***注：在大部分情况下，Eager API 背后其实调用的是 Lazy API，Eager 模式其实也是有查询优化***
 
 # 历史相关文章
-- [Python polars学习-01 读取与写入文件](https://www.jianshu.com/p/40abe6c2018d)
-- [Python polars学习-02 上下文与表达式](https://www.jianshu.com/p/06bacc452401)
-- [polars学习-03 数据类型转换](https://www.jianshu.com/p/a53f4a11a909)
-- [Python polars学习-04 字符串数据处理](https://www.jianshu.com/p/93bde134ea97)
-- [Python polars学习-05 包含的数据结构](https://www.jianshu.com/p/a6ae818e6dd7)
+- [Python polars学习-01 读取与写入文件](./Python_polars学习-01_读取与写入文件.md)
+- [Python polars学习-02 上下文与表达式](./Python_polars学习-02_上下文与表达式.md)
+- [Python polars学习-03 数据类型转换](./Python_polars学习-03_数据类型转换.md)
+- [Python polars学习-04 字符串数据处理](./Python_polars学习-04_字符串数据处理.md)
+- [Python polars学习-05 包含的数据结构](./Python_polars学习-05_包含的数据结构.md)
 
 **************************************************************************
 **以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号：DataShare ，不定期分享干货**

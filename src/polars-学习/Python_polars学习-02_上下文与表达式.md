@@ -1,6 +1,8 @@
 # 背景
-polars学习系列文章，第2篇，上下文与表达式。该系列文章会分享到github，大家可以去下载jupyter文件
-仓库地址：https://github.com/DataShare-duo/polars_learn
+polars学习系列文章，第2篇，上下文与表达式。<br/>
+该系列文章会分享到github，大家可以去下载jupyter文件
+
+仓库地址：[https://github.com/DataShare-duo/polars_learn](https://github.com/DataShare-duo/polars_learn)
 
 # 上下文与表达式概述
 **官方文档表述：**
@@ -169,10 +171,10 @@ df.sort(["Sepal.Length","Petal.Length"],descending=[True,False])
 ```
 
 # 历史相关文章
-- [Python polars学习-01 读取与写入文件](https://www.jianshu.com/p/40abe6c2018d)
-- [Python pandas遍历行数据的2种方法](https://www.jianshu.com/p/9b4596949f62)
-- [Python 利用pandas对数据进行特定排序](https://www.jianshu.com/p/8cee0d657696)
-- [Python pandas.str.replace 不起作用](https://www.jianshu.com/p/b8e9ddee3b04)
+- [Python polars学习-01 读取与写入文件](./Python_polars学习-01_读取与写入文件.md)
+- [Python pandas遍历行数据的2种方法](../Python数据处理/Python-pandas遍历行数据的2种方法.md)
+- [Python 利用pandas对数据进行特定排序](../Python数据处理/Python-利用pandas对数据进行特定排序.md)
+- [Python pandas.str.replace 不起作用](../Python数据处理/Python-pandas-str-replace-不起作用.md)
 
 **************************************************************************
 **以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号：DataShare ，不定期分享干货**

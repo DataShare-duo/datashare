@@ -57,24 +57,24 @@ if __name__ == '__main__':
 
 用法1：
 只指定需要转换的 csv 文件，转换后的结果 excel 文件，默认与 csv 文件同名，且保存在同一个文件夹里面
-```cmd
+```shell
 python csv_to_excel.py -in test.csv
 #python csv_to_excel.py --input_file test.csv
 ```
 
 用法2：
 指定需要转换的 csv 文件，同时指定输出的 excel 结果文件名
-```cmd
+```shell
 python csv_to_excel.py -in test.csv -out test_convert.xlsx
 #python csv_to_excel.py --input_file test.csv --output_file test_convert.xlsx
 ```
 
-![使用教程](https://upload-images.jianshu.io/upload_images/6641583-a774b1953bb9f889.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1040)
+![使用教程](./images/6641583-a774b1953bb9f889.webp)
 
 # 历史相关文章
-- [对csv文件，又get了新的认知](https://www.jianshu.com/p/57e5650874f6)
-- [Python 处理Excel文件为了通用原则，建议用openpyxl库](https://www.jianshu.com/p/6814e825affa)
-- [Python pandas在读取csv文件时（linux与windows之间传输），数据行数不一致的问题](https://www.jianshu.com/p/790d8a722646)
+- [对csv文件，又get了新的认知](./对csv文件，又get了新的认知.md)
+- [Python 处理Excel文件为了通用原则，建议用openpyxl库](./Python-处理Excel文件为了通用原则，建议用openpyxl库.md)
+- [Python pandas在读取csv文件时（linux与windows之间传输），数据行数不一致的问题](./Python-pandas在读取csv文件时（linux与windows之间传输），数据行数不一致的问题.md)
 
 **************************************************************************
 **以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号：DataShare ，不定期分享干货**

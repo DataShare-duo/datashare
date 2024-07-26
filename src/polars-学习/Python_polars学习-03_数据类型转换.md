@@ -1,7 +1,8 @@
 # 背景
-polars学习系列文章，第3篇 数据类型转换。
+polars学习系列文章，第3篇 数据类型转换。<br/>
 该系列文章会分享到github，大家可以去下载jupyter文件
-仓库地址：https://github.com/DataShare-duo/polars_learn
+
+仓库地址：[https://github.com/DataShare-duo/polars_learn](https://github.com/DataShare-duo/polars_learn)
 
 # 小编运行环境
 ```python
@@ -338,10 +339,10 @@ shape: (5, 3)
 ```
 
 # 历史相关文章
-- [Python polars学习-01 读取与写入文件](https://www.jianshu.com/p/40abe6c2018d)
-- [Python polars学习-02 上下文与表达式](https://www.jianshu.com/p/06bacc452401)
-- [Python pandas 里面的数据类型坑，astype要慎用](https://www.jianshu.com/p/19c537f24b34)
-- [Python pandas.str.replace 不起作用](https://www.jianshu.com/p/b8e9ddee3b04)
+- [Python polars学习-01 读取与写入文件](./Python_polars学习-01_读取与写入文件.md)
+- [Python polars学习-02 上下文与表达式](./Python_polars学习-02_上下文与表达式.md)
+- [Python pandas 里面的数据类型坑，astype要慎用](../Python数据处理/Python-pandas-里面的数据类型坑，astype要慎用.md)
+- [Python pandas.str.replace 不起作用](../Python数据处理/Python-pandas-str-replace-不起作用.md)
 
 **************************************************************************
 **以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号：DataShare ，不定期分享干货**

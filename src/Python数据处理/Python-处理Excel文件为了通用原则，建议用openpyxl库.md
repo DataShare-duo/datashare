@@ -1,12 +1,12 @@
 # 背景
-在给业务生成自动化Excel报表时，需要把数据库里面的数据进行处理，然后放到Excel里面并进行美化，用邮件进行发送，满足业务的需求。但是这些自动化程序一般都是部署在Linux服务器上定期进行发送邮件，这样就需要在Linux环境下生成Excel文件，之前有文章介绍过 **[xlwings库](https://www.jianshu.com/p/8e9f02f93df6)**，但是该库不支持Linux，经过查找相关的资料后，**openpyxl库** 可以满足要求。
+在给业务生成自动化Excel报表时，需要把数据库里面的数据进行处理，然后放到Excel里面并进行美化，用邮件进行发送，满足业务的需求。但是这些自动化程序一般都是部署在Linux服务器上定期进行发送邮件，这样就需要在Linux环境下生成Excel文件，之前有文章介绍过 **xlwings库**，但是该库不支持Linux，经过查找相关的资料后，**openpyxl库** 可以满足要求。
 
 **xlwings只支持Windows 和 Mac系统**
-![xlwings](https://upload-images.jianshu.io/upload_images/6641583-445f85528be23f7b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1040)
+![xlwings](./images/6641583-445f85528be23f7b.webp)
 
 
 **openpyxl 三个系统都支持，该库是基于操作XML文件而支持操作Excel文件，支持Excel2010版之后的所有Excel文件**
-![openpyxl](https://upload-images.jianshu.io/upload_images/6641583-e6180635eee684e7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1040)
+![openpyxl](./images/6641583-e6180635eee684e7.webp)
 
 *额外话题：
 虽然现在一些公司都用BI工具，但是这些BI报表建立后，后期进行维护时需要很大的成本，比如：BI系统有升级、数据库字段有变化、更有甚者创建BI报表的员工离职等等，有的公司可能用的还是Tableau、帆软BI等第三方的工具，更新不及时，无法使用到最新的功能。
@@ -14,19 +14,19 @@
 # 深度剖析Excel文件的构成
 上面说到openpyxl库是基于操作XML文件而支持操作Excel文件，那么XML文件和Excel有什么关系呢？下面进行介绍：
 现阶段公司里面基本用的都是office2013版之后的，文件后缀是 **.xlsx** ，可以把后缀修改为 **.zip** ，然后进行解压后，可以发现文件夹里面有一些XML文件，其实Excel就是由XML文件与其他一些文件联合组成的一个文件包，然后经过Excel解析后，呈现在用户面前的是一个可编辑的界面，如果理解了这些，就可以发现微软确实比较牛，他们的产品经理是多么厉害。
-![excel拆解开](https://upload-images.jianshu.io/upload_images/6641583-655b174923257438.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1040)
+![excel拆解开](./images/6641583-655b174923257438.webp)
 
 /demo/xl/worksheets/sheet1.xml 文件内容，B1到B3单元格存放的是1-3
-![sheet.xml](https://upload-images.jianshu.io/upload_images/6641583-3aa4b575ab5971d1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1040)
+![sheet.xml](./images/6641583-3aa4b575ab5971d1.webp)
 
 而A1到A3单元格放的是0-2值来代替，真实的值可以在/demo/xl/sharedStrings.xml文件里面查到，这里微软用了映射的方法，放入的是数值，类似pandas里面的category类型一样，可以减少内存占用
-![sharedStrings.xml](https://upload-images.jianshu.io/upload_images/6641583-1f9d7967e1ca403c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1040)
+![sharedStrings.xml](./images/6641583-1f9d7967e1ca403c.webp)
 # openpyxl介绍
 该库是基于PHPExcel，也就是PHP操作Excel文件的库，PHP是后端的开发语言，一般大都是部署在Linux服务器
 文档：[官方文档 https://openpyxl.readthedocs.io/en/stable/index.html](https://openpyxl.readthedocs.io/en/stable/index.html)，里面有很详细的介绍，目前只有英文版文档，可以配合百度翻译进行查阅
 
 该库也一直有更新，最近的一次更新时间为：2021年3月9日，python里面建议用一直有更新的库
-![openpyxl](https://upload-images.jianshu.io/upload_images/6641583-b8c565b2279f4965.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1040)
+![openpyxl](./images/6641583-b8c565b2279f4965.webp)
 
 用 **openpyxl** 可以直接生产包含XML文件的文件包，也就是Excel文件，该库也就是按照微软的规则把数据写入XML文件，进而可以生产Excel，达到了操作Excel的目的
 
@@ -61,7 +61,7 @@ worksheet.row_dimensions[1].height=29
 worksheet.column_dimensions['A'].width=18
 ```
 # 历史相关文章
-- [Python用xlwings库处理Excel](https://www.jianshu.com/p/8e9f02f93df6)
-- [对比Excel，利用pandas进行数据分析各种用法](https://www.jianshu.com/p/7d2530533762)
+- [Python用xlwings库处理Excel](./Python用xlwings库处理Excel.md)
+- [对比Excel，利用pandas进行数据分析各种用法](./对比Excel，利用pandas进行数据分析各种用法.md)
 **************************************************************************
 **以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号：DataShare ，不定期分享干货**

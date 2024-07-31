@@ -10,33 +10,34 @@
 
 
 # 参数介绍及注意事项 
-[**官方文档：**](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_sql.html)
+**官方文档：** [https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_sql.html](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_sql.html)
+
 `DataFrame.to_sql`(*name*, *con*, *schema=None*, *if_exists='fail'*, *index=True*, *index_label=None*, *chunksize=None*, *dtype=None*, *method=None*)
 
 常用参数：
-- *name*：
-导入到mysql时表的名字
-如果mysql里面已经用`CREATE TABLE`创建好了表，那么就是该表名字
+- *name*：<br/>
+导入到mysql时表的名字  <br/>
+如果mysql里面已经用`CREATE TABLE`创建好了表，那么就是该表名字  <br/>
 如果mysql没有创建好表，那么可以自己起一个合适的表名
 
-- *con*：
+- *con*：<br/>
 数据库连接，需要安装sqlalchemy库，目前仅支持sqlalchemy库创建的连接，pymysql库创建的连接不支持
 ```python
 engine = create_engine("mysql+pymysql://root:z123456@127.0.0.1:3306/routeapp?charset=utf8")
 #SQLALCHEMY_DATABASE_URI = '%s+%s://%s:%s@%s:%s/%s' % (DB_TYPE, DB_DRIVER, DB_USER,DB_PASS, DB_HOST, DB_PORT, DB_NAME)
 ```
-- *if_exists*：以下三个选项，是如果数据库里面已经存在该表的意思
-"fail"：直接报错，不再操作，类似mysql创建表时的`IF NOT EXISTS`才创建表
-"replace"：先删除该表，然后再创建
+- *if_exists*：以下三个选项，是如果数据库里面已经存在该表的意思 <br/>
+"fail"：直接报错，不再操作，类似mysql创建表时的`IF NOT EXISTS`才创建表 <br/>
+"replace"：先删除该表，然后再创建 <br/>
 "append"：直接在表后面添加数据
 
-- *index*：bool
+- *index*：bool <br/>
 是否把DataFrame的索引列写入表中
-- *index_label*：
+- *index_label*：<br/>
 如果要把DataFrame的索引列写入表中，那么需要给出该索引列的名字，如果没给的话，那就会用DataFrame的列索引名
 
-**注意事项：**
-*con*参数一定要仔细核对，否则数据库会连接失败，可参照上面给出的例子按自己的实际数据库位置进行更改
+**注意事项：** <br/>
+*con* 参数一定要仔细核对，否则数据库会连接失败，可参照上面给出的例子按自己的实际数据库位置进行更改
 
 
 # 案例
@@ -48,7 +49,7 @@ import pandas as pd
 data=pd.read_table('./data_pandas.txt')
 data.head()
 ```
-![城市之间火车信息](https://upload-images.jianshu.io/upload_images/6641583-799b9b1803441948.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1040)
+![城市之间火车信息](./images/6641583-799b9b1803441948.webp)
 
 假如数据库里面已经创建好该表，并且已经指定好各列的数据类型，现在只需把数据导入到里面
 ```sql
@@ -71,6 +72,7 @@ CREATE TABLE IF NOT EXISTS train (
 ) ENGINE = INNODB DEFAULT CHARSET = utf8 COMMENT = '城市之间火车信息';
 ```
 借助`sqlalchemy`库来导入数据
+
 ```python
 from sqlalchemy import create_engine
 
@@ -82,10 +84,14 @@ with engine.begin() as conn:
     data.to_sql(name='routeapp_train_line_tb_new_2',con=conn,if_exists='append',index=False)
 ```
 <br/>
-这里用with语句可以实现mysql的roallback功能，建议最好用with来导入数据![导入数据](https://upload-images.jianshu.io/upload_images/6641583-6f6c644ab2f324fb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1040)
+
+这里用with语句可以实现mysql的roallback功能，建议最好用with来导入数据
+![导入数据](./images/6641583-6f6c644ab2f324fb.webp)
+
 # 参考文章
 - [python3 pandas to_sql填坑](https://blog.csdn.net/qnloft/article/details/87979937)
 - [Commit and rollback with pandas.DataFrame.to_sql()](https://capelastegui.wordpress.com/2018/05/21/commit-and-rollback-with-pandas-dataframe-to_sql/)
+
 # 历史相关文章
 - [Python 基于ssh连接远程Mysql数据库](https://www.jianshu.com/p/e86c247da544)
 - [Python pandas 里面的数据类型坑，astype要慎用](https://www.jianshu.com/p/19c537f24b34)

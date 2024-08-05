@@ -14,10 +14,11 @@ print(pd.__version__)
 #2.1.0
 ```
 # 演示数据
-![演示数据](https://upload-images.jianshu.io/upload_images/6641583-8be62eaf7c7a3f27.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![演示数据](./images/6641583-8be62eaf7c7a3f27.png)
 
 # 方法1
 `pandas.DataFrame.itertuples`：返回的是一个命名元组
+
 官方文档：https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.itertuples.html
 
 **1. 无任何参数**
@@ -98,6 +99,7 @@ for row in data.itertuples(index=False,name="data"):
 
 # 方法2
 `pandas.DataFrame.iterrows`：返回 `(index, Series)` 元组
+
 官方文档：https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.iterrows.html
 ```python
 import pandas as pd
@@ -129,11 +131,11 @@ for index,row in data.iterrows():
 ```
 
 # 历史相关文章
-- [Python 利用pandas对数据进行特定排序](https://www.jianshu.com/p/8cee0d657696)
-- [Python pandas 2.0 初探](https://www.jianshu.com/p/32cf63c30f8b)
-- [Python pandas.str.replace 不起作用](https://www.jianshu.com/p/b8e9ddee3b04)
-- [Python数据处理中 pd.concat 与 pd.merge 区别](https://www.jianshu.com/p/e646d91e83b0)
-- [对比Excel，利用pandas进行数据分析各种用法](https://www.jianshu.com/p/7d2530533762)
+- [Python 利用pandas对数据进行特定排序](./Python-利用pandas对数据进行特定排序.md)
+- [Python pandas 2.0 初探](./Python-pandas-2-0-初探.md)
+- [Python pandas.str.replace 不起作用](./Python-pandas-str-replace-不起作用.md)
+- [Python数据处理中 pd.concat 与 pd.merge 区别](./Python数据处理中-pd-concat-与-pd-merge-区别.md)
+- [对比Excel，利用pandas进行数据分析各种用法](./对比Excel，利用pandas进行数据分析各种用法.md)
 
 **************************************************************************
 **以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号：DataShare ，不定期分享干货**

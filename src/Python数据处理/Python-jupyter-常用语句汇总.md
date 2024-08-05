@@ -1,4 +1,4 @@
-#1.全局设置
+# 1.全局设置
 ```
 #显示所有列
 pd.set_option('display.max_columns', None)
@@ -18,7 +18,7 @@ pd.set_option("mode.copy_on_write", True)
 #打印时显示全部数组信息
 np.set_printoptions(threshold=np.inf)
 ```
-#2.画图
+# 2.画图
 ```
 #内嵌画图
 %matplotlib inline
@@ -26,9 +26,12 @@ np.set_printoptions(threshold=np.inf)
 #单独画图
 %matplotlib qt
 ```
-#3.显示
+# 3.显示
 ```
 #让一个cell同时有多个输出print
 from IPython.core.interactiveshell import InteractiveShell
 InteractiveShell.ast_node_interactivity = "all" 
 ```
+**************************************************************************
+**以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号：DataShare ，不定期分享干货**
+

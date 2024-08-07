@@ -1,7 +1,14 @@
-**在网上查看了一些python处理excel库资料，参考相关内容[Python读写Excel文件第三方库汇总，你想要的都在这儿！](https://blog.csdn.net/qq_34617032/article/details/80433939)，经过对比后，最后选择xlwings库，来处理excel文件。
-![多库对比](https://upload-images.jianshu.io/upload_images/6641583-9be27ea0e6fb376f?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-由于自己会VBA，所以xlwings里面的一些函数用起来还是比较方便的，能够看懂大概用法，如果你不会VBA的话也没关系，xlwings英文版文档[http://docs.xlwings.org/en/stable/api.html](http://docs.xlwings.org/en/stable/api.html)也很简单、简洁，英语很low的我也能看懂，不行就百度翻译一下，基本都可以理解怎么使用，而且这个库也一直在更新，长期来看还是比较靠谱的**
-```
+在网上查看了一些python处理excel库资料，参考相关内容
+[Python读写Excel文件第三方库汇总，你想要的都在这儿！](https://blog.csdn.net/qq_34617032/article/details/80433939)
+经过对比后，最后选择xlwings库，来处理excel文件
+![多库对比](./images/6641583-9be27ea0e6fb376f.webp)
+由于自己会VBA，所以xlwings里面的一些函数用起来还是比较方便的，能够看懂大概用法，如果你不会VBA的话也没关系
+
+xlwings英文版文档：[http://docs.xlwings.org/en/stable/api.html](http://docs.xlwings.org/en/stable/api.html)
+
+也很简单、简洁，英语很low的我也能看懂，不行就百度翻译一下，基本都可以理解怎么使用，而且这个库也一直在更新，长期来看还是比较靠谱的
+
+```python
 #以下代码在jupyter notebook 里面运行，打印时不用print
 
 import xlwings as xw   #引入xlwings模块
@@ -38,3 +45,8 @@ app.kill()    #完全退出excel程序，后台没有进程在运行
 **注意的点：**
 - 引用单元格数据时要加.value，这里和VBA的cell用法有所区别，cell默认就是.value，而这里不是
 - 退出excel时，建议用app.kill()来终止进程
+
+**************************************************************************
+**以上是自己实践中遇到的一些点，分享出来供大家参考学习，欢迎关注微信公众号DataShare，不定期分享干货**
+
+

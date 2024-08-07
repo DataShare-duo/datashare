@@ -1,25 +1,30 @@
->声明
-本篇文章仅用来技术分享，如有侵权请及时联系本小编，微信公众号：DataShare，进行删除
+>**声明：**
+>
+>本篇文章仅用来技术分享，如有侵权请及时联系本小编，微信公众号：DataShare，进行删除
+
 # 背景
 一个用了十年的电影、电视剧网址：飘花电影网，https://www.piaohua.com，关键是一直免费，从大学时代到工作了几年后，仍一直在用的网站，里面的电影、电视剧一直实时更新，各大平台的VIP内容均可免费观看。
-![电影](https://upload-images.jianshu.io/upload_images/6641583-49248b520d618de2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![电影](./images/6641583-49248b520d618de2.webp)
 
-![电视剧](https://upload-images.jianshu.io/upload_images/6641583-96192d4097afcf57.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![电视剧](./images/6641583-96192d4097afcf57.webp)
 
 最开始是支持迅雷下载，后来迅雷会屏蔽下载链接，现在是网站自己开发一个 **荐片播放器** 可以直接用来边下载边观看，很是方便
 
 ***荐片播放器下载地址：https://www.jianpian8.com***
-![荐片播放器下载地址](https://upload-images.jianshu.io/upload_images/6641583-159442dc11e2e42a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![荐片播放器下载地址](./images/6641583-159442dc11e2e42a.webp)
 
 # 分析抓包内容
 第一集：ftp://a.gbl.114s.com:20320/1531/人世间第1集.mp4
+
 第二集：ftp://a.gbl.114s.com:20320/0999/人世间第2集.mp4
+
 第三集：ftp://a.gbl.114s.com:20320/8950/人世间第3集.mp4
 
 通过上面每一集的地址，可以发现 **a.gbl.114s.com** 这个服务器地址很牛逼，存放了这么多免费的电影、电视剧，于是通过国外一个搜索引擎找到了一个开放的API，可以查看播放地址
 
 **API地址：https://api2.rinhome.com/api/node/detail?id=556881**
-![返回的json](https://upload-images.jianshu.io/upload_images/6641583-f925a0009efa3960.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![返回的json](./images/6641583-f925a0009efa3960.webp)
 
 
 可以明确《人世间的》的 id 是 556881，于是脑洞大开，想从id=1开始到100万，采集一个完整的明细，包含电影、电视剧
@@ -111,7 +116,7 @@ if __name__=='__main__':
 ```
 
 # 历史相关文章
-- [Python opencv一次读取视频里面多张视频帧](https://www.jianshu.com/p/bc25410a9ff2)
-- [Python 多线程，真实使用代码](https://www.jianshu.com/p/e9f5ccc9f12a)
+- [Python opencv一次读取视频里面多张视频帧](../Python图像处理/Python---opencv一次读取视频里面多张视频帧.md)
+- [Python 多线程，真实使用代码](../Python数据处理/Python-多线程，真实使用代码.md)
 **************************************************************************
 **以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号：DataShare ，不定期分享干货**

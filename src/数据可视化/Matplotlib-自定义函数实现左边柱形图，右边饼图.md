@@ -5,7 +5,7 @@
 
 
 # 效果
-![效果](https://upload-images.jianshu.io/upload_images/6641583-093d60171af01d5e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![效果](./images/6641583-093d60171af01d5e.webp)
 
 # 利用自定义函数画图
 ```python
@@ -69,7 +69,7 @@ plt.show()
 ```
 
 # 历史相关文章
-- [利用Python画出《人民日报》各国疫情图——南丁格尔玫瑰图](https://www.jianshu.com/p/dbc39e08d138)
-- [历史双色球数据分析---python](https://www.jianshu.com/p/79979e7982fa)
+- [利用Python画出《人民日报》各国疫情图——南丁格尔玫瑰图](./利用Python画出《人民日报》各国疫情图——南丁格尔玫瑰图.md)
+- [历史双色球数据分析---python](../Python数据处理/历史双色球数据分析---python.md)
 **************************************************************************
 **以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号：DataShare ，不定期分享干货**

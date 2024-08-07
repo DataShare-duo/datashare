@@ -1,12 +1,14 @@
-#背景
+# 背景
 在对视频进行人脸打码时，需要从磁盘读取视频帧，然后通过训练好的深度神经网络模型进行人脸监测，获取到人脸的位置后，然后进行打码。
-#opencv读取多张视频帧，提高性能
+
+# opencv读取多张视频帧，提高性能
 由于opencv每次只能读取一张视频帧，然后把这一张视频帧送入神经网络模型进行人脸监测，这样逐帧的处理视频，速度相对来说比较慢。
 
 为了提高性能，需要进行优化。如果对训练深度神经网络模型，原理了解的话，那么可以每次传入多个视频帧，这样每次作为一个batch，使计算效率更高一些。深度神经网络模型在训练时，是每次处理一个batch图像，来通过梯度下降，优化模型参数。
 
 这样就需要opencv每次读取多个视频帧，但是opencv里面没有这样的方法，只能自己去实现这样的方法。
-#实例代码
+
+# 实例代码
 ```python
 import cv2
 import numpy as np
@@ -36,9 +38,9 @@ while ret:
 print(img_batch_rgb.shape,flush=True)
 #img_batch_rgb      #该变量即为多个视频帧
 ```
-#历史相关文章
-- [Python 人脸检测方法总结](https://www.jianshu.com/p/5dfe4ed2873d)
-- [Python 多线程，真实使用代码](https://www.jianshu.com/p/e9f5ccc9f12a)
+# 历史相关文章
+- [Python 人脸检测方法总结](./Python-人脸检测方法总结.md)
+- [Python 多线程，真实使用代码](../Python数据处理/Python-多线程，真实使用代码.md)
+
 **************************************************************************
 **以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号，不定期分享干货**
-![](https://upload-images.jianshu.io/upload_images/6641583-bce6d13cc37824d7.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/240)

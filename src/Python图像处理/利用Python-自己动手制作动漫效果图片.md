@@ -2,17 +2,20 @@
 动漫效果的头像最近比较火，微信里面有大量的朋友都是使用这种风格的头像，在一些软件里面也慢慢开始集成该功能，在手机里面可以直接制作出动漫效果的图片
 
 这种风格的图片是怎么生成的呢，那就不得不说最近这几年大火的AI，也就是神经网络模型，可以用来处理目前的一些问题，比如：自然语言/NLP类、图像/CV类、声音类 等，动漫图片就归属于图像/CV类中的一种，本篇文章主要是介绍一个开源的模型，来生成这种动漫效果的图片
+
 # 动漫效果
-![动漫效果](https://upload-images.jianshu.io/upload_images/6641583-0a17524399db2343.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1040)
+![动漫效果](./images/6641583-0a17524399db2343.webp)
+
 # 开源项目介绍
 最近发现一个开源项目可以实现该功能，其模型的权重只有 8.2M ，相对一些大的模型来说已经很轻量级了，并且该模型在自己的笔记本电脑能够很好运行，你可以直接下载该项目到自己的电脑里面，来处理自己想要的图片
 
-pytorch版本地址：（本文基于pytorch版本）
-https://github.com/bryandlee/animegan2-pytorch
+pytorch版本地址：（本文基于pytorch版本）<br/>
+[https://github.com/bryandlee/animegan2-pytorch](https://github.com/bryandlee/animegan2-pytorch)
 
-tensorflow版本地址：
-https://github.com/TachibanaYoshino/AnimeGANv2
-![开源项目](https://upload-images.jianshu.io/upload_images/6641583-b38b5b66d0df68fa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+tensorflow版本地址： <br/>
+[https://github.com/TachibanaYoshino/AnimeGANv2](https://github.com/TachibanaYoshino/AnimeGANv2)
+
+![开源项目](./images/6641583-b38b5b66d0df68fa.webp)
 
 # 自己动手实践
 本篇文章里面的代码是依赖开源项目中的 
@@ -93,28 +96,28 @@ for row in range(2):
 
 target.save('./animegan_outs/out_all.jpg', quality=100) #保存合并的图片
 ```
-![完整代码](https://upload-images.jianshu.io/upload_images/6641583-4557698554c7b324.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1040)
+![完整代码](./images/6641583-4557698554c7b324.webp)
 
 # 生成的动漫图片
-![原始图片](https://upload-images.jianshu.io/upload_images/6641583-7325b334ce1f76ea.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/640)
+![原始图片](./images/6641583-7325b334ce1f76ea.webp)
 
-![face_paint_512_v2](https://upload-images.jianshu.io/upload_images/6641583-ed87e465648eaa32.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/640)
+![face_paint_512_v2](./images/6641583-ed87e465648eaa32.webp)
 
 
-![face_paint_512_v1](https://upload-images.jianshu.io/upload_images/6641583-cd06d834dd0f9646.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/640)
+![face_paint_512_v1](./images/6641583-cd06d834dd0f9646.webp)
 
-![paprika](https://upload-images.jianshu.io/upload_images/6641583-2437a9b9a55bc05f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/640)
+![paprika](./images/6641583-2437a9b9a55bc05f.webp)
 
-![celeba_distill](https://upload-images.jianshu.io/upload_images/6641583-ee0ddaec1f99e2c5.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/640)
+![celeba_distill](./images/6641583-ee0ddaec1f99e2c5.webp)
 
-![out_all](https://upload-images.jianshu.io/upload_images/6641583-b8182d145b0de459.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1040)
+![out_all](./images/6641583-b8182d145b0de459.webp)
 
 
 
 # 历史相关文章
-- [Python opencv一次读取视频里面多张视频帧](https://www.jianshu.com/p/bc25410a9ff2)
-- [Python 人脸检测方法总结](https://www.jianshu.com/p/5dfe4ed2873d)
-- [利用Python生成手绘效果的图片](https://www.jianshu.com/p/40e353ec75bd)
+- [Python opencv一次读取视频里面多张视频帧]()
+- [Python 人脸检测方法总结]()
+- [利用Python生成手绘效果的图片]()
 
 **************************************************************************
 **以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号：DataShare ，不定期分享干货**

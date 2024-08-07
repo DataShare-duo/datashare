@@ -1,42 +1,49 @@
 # 背景
 最近项目在写报告时需要用到罗兰贝格图进行数据可视化呈现，罗兰贝格图如下所示，是用红色代表相对更强的方面，蓝色代表相对比较弱的方面，比如两个品牌在对比时，A品牌与B品牌，A品牌在哪些方面更有优势，在哪些方便相对比较薄弱。通过罗兰贝格图可以给人直观的印象，可视化出来能够使客户一眼判断出来。
-![原始罗兰贝格图](https://upload-images.jianshu.io/upload_images/6641583-45a33be0fe010751.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![原始罗兰贝格图](./images/6641583-45a33be0fe010751.webp)
+
 # Python等高线图
 罗兰贝格图放在Python里面对应就是等高线图，等高线图在matplotlib库里面对应plt.contourf函数与plt.contour函数，熟悉里面的参数后基本都可以进行画图，由于我们的数据是一个表格（矩阵），只有对应的几个点，要想画出这种不规则的图，只能利用插值方法进行处理，然后需要把图形转换成平滑的形状。
-**遇到的难点：
-1、0应该为白色，需要用来区分红色和蓝色，在画图时需要用自定义函数来处理
-2、画的图要进行平滑处理，需要利用矩阵二次样条插值法**
+
+**遇到的难点：** <br/>
+1. 0应该为白色，需要用来区分红色和蓝色，在画图时需要用自定义函数来处理
+2. 画的图要进行平滑处理，需要利用矩阵二次样条插值法
+
 
 下面一步一步进行介绍：
-- **1、添加上下边界**
+
+- **1、添加上下边界** <br/>
 这个需要在Excel里面手动进行处理，放在python中也是可以处理，但是相对来说Excel里面更灵活，后面可以直接进行读取数据，然后画图。目的主要用来画图时，图的周边是白色
-![添加上下边界](https://upload-images.jianshu.io/upload_images/6641583-9c1ab0b7d9e2348d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-- **2、读取数据**
+![添加上下边界](./images/6641583-9c1ab0b7d9e2348d.webp)
+
+- **2、读取数据** <br/>
 从Excel文件里面读取数据
-![读取数据](https://upload-images.jianshu.io/upload_images/6641583-371ff717e20ca4cd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![读取数据](./images/6641583-371ff717e20ca4cd.webp)
 
-- **3、自定义插值函数**
+- **3、自定义插值函数** <br/>
 这里面用的是线性插值，在两个点中间插入一个新的点，新点的值为两边点的均值：$新点值x=\frac{a+b}{2}$，下面一共自定义两个，一个是用来对二维数据进行插值处理，一个是用来对一维数据进行插值
-![自定义插值函数](https://upload-images.jianshu.io/upload_images/6641583-0a4995f7899b2e6f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-- **4、自定义颜色分割界线函数**
-主要用来规避等高线图里面自带的cmp参数的缺点，使0值作为红色与蓝色的对称中心，使红色分为5个区间，蓝色分为5个区间。这个自定义函数里面`progression`参数可以选择用等差还是等比来分割，默认的是等比，画图结果相对更美观一些
-![自定义颜色分割界线](https://upload-images.jianshu.io/upload_images/6641583-4406df052df4a677.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![自定义插值函数](./images/6641583-0a4995f7899b2e6f.webp)
 
-- **5、定义坐标点**
+- **4、自定义颜色分割界线函数** <br/>
+主要用来规避等高线图里面自带的cmp参数的缺点，使0值作为红色与蓝色的对称中心，使红色分为5个区间，蓝色分为5个区间。这个自定义函数里面`progression`参数可以选择用等差还是等比来分割，默认的是等比，画图结果相对更美观一些
+![自定义颜色分割界线](./images/6641583-4406df052df4a677.webp)
+
+- **5、定义坐标点** <br/>
 定义坐标点后，并利用上面自定义的插值函数对x、y、Height各进行一次线性插值
-![定义坐标点](https://upload-images.jianshu.io/upload_images/6641583-0b8b3ffe24ca3f65.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-- **6、进行平滑处理**
+![定义坐标点](./images/6641583-0b8b3ffe24ca3f65.webp)
+- **6、进行平滑处理** <br/>
 运用scipy库里面的矩阵样条插值函数进行平滑度处理，详细参数含义可以查看官方文档https://docs.scipy.org/doc/scipy/reference/generated/scipy.interpolate.RectBivariateSpline.html#scipy.interpolate.RectBivariateSpline
 
-![进行平滑处理](https://upload-images.jianshu.io/upload_images/6641583-936f7fdb6639dd4c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-- **7、画图**
+![进行平滑处理](./images/6641583-936f7fdb6639dd4c.webp)
+
+- **7、画图** <br/>
 首先需要用到上面自定义的颜色分割界线函数计算一下分割界线，然后剩下的和正常的画图一样
-![画图](https://upload-images.jianshu.io/upload_images/6641583-60fb7ec57fba0265.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-- **8、最终结果**
-![最终结果](https://upload-images.jianshu.io/upload_images/6641583-fd7220f136eea7a5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![画图](./images/6641583-60fb7ec57fba0265.webp)
+- **8、最终结果** <br/>
+![最终结果](./images/6641583-fd7220f136eea7a5.webp)
 
 # 以上为整个罗兰贝格的画图步骤，下面展示全部的详细代码：
-```
+```python
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt

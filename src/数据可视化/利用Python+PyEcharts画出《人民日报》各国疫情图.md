@@ -1,20 +1,21 @@
 # 背景
 由于昨天利用基础库Matplotlib画的不是很完美，今天借助高级可视化库pyecharts来重新再实现一下人民日报的各国疫情图。
 
-#pyecharts简介
+# pyecharts简介
 >[Echarts](https://github.com/ecomfe/echarts) 是一个由百度开源的数据可视化，凭借着良好的交互性，精巧的图表设计，得到了众多开发者的认可。而 Python 是一门富有表达力的语言，很适合用于数据处理。当数据分析遇上数据可视化时，[pyecharts](https://github.com/pyecharts/pyecharts) 诞生了。
 
 # 《人民日报》  VS   pyecharts制作
 数据均是截至到2020年3月14日0时，各国疫情累计确诊人数，可以明显看出人民日报的图可能是PS出来的~~~
-![人民日报](https://upload-images.jianshu.io/upload_images/6641583-5e104e3137c26987.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/440)
 
-![pyecharts制作](https://upload-images.jianshu.io/upload_images/6641583-c30228831c00604f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/440)
+![人民日报](./images/6641583-5e104e3137c26987.webp)
+
+![pyecharts制作](./images/6641583-c30228831c00604f.webp)
 
 
-#安装pyecharts
+# 安装pyecharts
 官网：[https://pyecharts.org/#/](https://pyecharts.org/#/)
 
-```
+```python
 #在终端中安装，或者Anaconda Prompt 中
 pip install pyecharts
 #conda install pyecharts
@@ -25,8 +26,10 @@ import pyecharts
 print(pyecharts.__version__)
 # 1.7.1
 ```
+
+
 # 整个画图代码
-```
+```python
 #导入pandas
 import pandas as pd
 
@@ -65,8 +68,12 @@ p.render_notebook()
 # p.render("pie.html")
 ```
 
-#参考资料
-1.http://gallery.pyecharts.org/#/Pie/pie_rosetype
-2.https://echarts.baidu.com/theme-builder/
-3.https://github.com/pyecharts/pyecharts-assets
-4.https://www.sioe.cn/yingyong/yanse-rgb-16/
+# 参考资料
+1. [http://gallery.pyecharts.org/#/Pie/pie_rosetype](http://gallery.pyecharts.org/#/Pie/pie_rosetype)
+2. [https://echarts.baidu.com/theme-builder/](https://echarts.baidu.com/theme-builder/)
+3. [https://github.com/pyecharts/pyecharts-assets](https://github.com/pyecharts/pyecharts-assets)
+4. [https://www.sioe.cn/yingyong/yanse-rgb-16/](https://www.sioe.cn/yingyong/yanse-rgb-16/)
+
+**************************************************************************
+**以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号：DataShare ，不定期分享干货**
+

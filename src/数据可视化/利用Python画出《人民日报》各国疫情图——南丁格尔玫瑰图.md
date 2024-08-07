@@ -1,20 +1,25 @@
-#背景
+# 背景
 中国在经历了非典后（2002年在中国广东发生），今年有经历了新冠肺炎，2020年注定是不平凡的一年。前一段时间人民日报的新冠肺炎全球疫情形势可视化图片在朋友圈疯狂传播，相信大部分人都不陌生，如下所示，自己闲暇之余就想用Python来实现一下，如下所示。
 >**SARS事件**是指[严重急性呼吸综合征](https://baike.baidu.com/item/%E4%B8%A5%E9%87%8D%E6%80%A5%E6%80%A7%E5%91%BC%E5%90%B8%E7%BB%BC%E5%90%88%E5%BE%81)（英语：**SARS**）于2002年在中国广东发生，并扩散至东南亚乃至全球，直至2003年中期疫情才被逐渐消灭的一次全球性传染病疫潮。
 
-![人民日报](https://upload-images.jianshu.io/upload_images/6641583-d1ce132be550058f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/240)
-![pyhton制作](https://upload-images.jianshu.io/upload_images/6641583-5be856a7ca5b1977.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/440)
+![人民日报](./images/6641583-d1ce132be550058f.webp)
+![pyhton制作](./images/6641583-5be856a7ca5b1977.webp)
 
-#实现过程
+# 实现过程
 - **数据源**
+
 各国的数据在网上都能查到，所以数据来源可以有很多方法。
+
 由于自己主要是想画图，所以就直接手动创建了Excel，手动输入数据。
-![数据](https://upload-images.jianshu.io/upload_images/6641583-33b798f8b90ca103.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![数据](./images/6641583-33b798f8b90ca103.webp)
+
 - **用到的Python库（轮子 or 模块）**
+
 Python在可视化方面有很多的库，比如：Matplotlib、Seaborn、ggplot、Pyecharts等，在这里使用的是最基础的Matplotlib库，数据读取用到的Pandas库，计算时用到Numpy库
 
 - **具体代码如下所示**
-```
+
+```python
 #导入相应的库
 import matplotlib.pyplot as plt
 import numpy as np
@@ -65,9 +70,14 @@ fig.savefig('COVID.png')
 ```
 
 # 总结
-目前自己所实现的比较复杂的图形，有罗兰贝格图、本文的南丁格尔玫瑰图，用到的数据知识相对来说比较多，可见数学基础知识是多么重要，华为任正非的做法非常对，必须得注重基础数学的研发，不能总是在别人的基础之上搞应用，华为才有了今天的成绩。
+目前自己所实现的比较复杂的图形，有罗兰贝格图、本文的南丁格尔玫瑰图，用到的数据知识相对来说比较多，可见数学基础知识是多么重要，华为任正非的做法非常对，必须得注重基础数学的研发，不能总是在别人的基础之上搞应用，华为才有了今天的成绩
 
 
 # 相关文章
-[罗兰贝格图--Python等高线图（平滑处理）]([https://www.jianshu.com/p/c89521fb42fc](https://www.jianshu.com/p/c89521fb42fc)
-)
+- [罗兰贝格图--Python等高线图（平滑处理）](./罗兰贝格图--Python等高线图（平滑处理）.md)
+
+**************************************************************************
+**以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号：DataShare ，不定期分享干货**
+
+
+

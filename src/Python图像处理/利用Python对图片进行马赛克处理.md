@@ -1,10 +1,17 @@
 # 背景
-最近项目需要用人脸检测技术把视频里面的人脸检测出来后，进行马赛克处理，人脸检测这一块就是大家熟知的利用深度学习技术来解决，之前有相关文章介绍[Python 人脸检测方法总结](https://www.jianshu.com/p/5dfe4ed2873d)，这篇文章主要介绍马赛克处理过程。
+最近项目需要用人脸检测技术把视频里面的人脸检测出来后，进行马赛克处理，人脸检测这一块就是大家熟知的利用深度学习技术来解决
+
+之前有相关文章介绍，这篇文章主要介绍马赛克处理过程
+
+[Python 人脸检测方法总结](./Python-人脸检测方法总结.md)
+
 # 马赛克原理
 图片是由一个三维数组，打马赛克就是把特定区域的值替换为其他值，项目在做的过程中经过一次升级，最开始用的是`高斯马赛克`，后来应客户的要求，升级为和其他软件手工打的马赛克一样的样式`正规马赛克`
 - 高斯马赛克
+
 特定区域值替换为高斯分布数值，可以利用`numpy`中的`np.random.normal(size=(h,w))`来生成一些随机的数值，然后进行替换即可
 - 正规马赛克
+
 马赛克的实现原理是把图像上某个像素点一定范围邻域内的所有点用邻域内左上像素点的颜色代替，这样可以模糊细节，但是可以保留大体的轮廓。就是用左上角的那个值，来替换右下方一个小方块的值，逐步进行替换即可。
 # 代码
 - 高斯马赛克
@@ -72,13 +79,14 @@ img_mosaic=do_mosaic(img, x, y, w, h, neighbor=15)
 cv2.imwrite('img_mosaic.jpg',img_mosaic)
 ```
 # 效果
-![原图](https://upload-images.jianshu.io/upload_images/6641583-ca84a06945b05128.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/640)
+![原图](./images/6641583-ca84a06945b05128.webp)
 <br/>
-![高斯马斯克](https://upload-images.jianshu.io/upload_images/6641583-e393cf4cd0ed718a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/640)
+![高斯马斯克](./images/6641583-e393cf4cd0ed718a.webp)
 <br/>
-![正规马赛克](https://upload-images.jianshu.io/upload_images/6641583-d51f678de01424ad.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/640)
+![正规马赛克](./images/6641583-d51f678de01424ad.webp)
 # 历史相关文章
-- [Python 人脸检测方法总结](https://www.jianshu.com/p/5dfe4ed2873d)
-- [利用Python生成手绘效果的图片](https://www.jianshu.com/p/40e353ec75bd)
+- [Python 人脸检测方法总结](./Python-人脸检测方法总结.md)
+- [利用Python生成手绘效果的图片](./利用Python生成手绘效果的图片.md)
+
 **************************************************************************
 **以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号DataShare，不定期分享干货**

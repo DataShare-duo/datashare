@@ -1,8 +1,8 @@
-#背景
+# 背景
 **平时用时知道有相应的设置及相应的原理，具体设置时又不好查找，现特此整理出来供大家收藏**
 
 *可左右滑动查看代码*
-#Anaconda
+# Anaconda
 ```
 pip list
 #或者
@@ -25,7 +25,7 @@ conda update conda
 # 更新 anaconda 自身
 conda update anaconda
 ```
-#jupyter
+# jupyter
 ```
 #显示所有列
 pd.set_option('display.max_columns', None)
@@ -56,7 +56,7 @@ plt.xticks(fontproperties=zhfont)
 from IPython.core.interactiveshell import InteractiveShell
 InteractiveShell.ast_node_interactivity = "all" 
 ```
-#主要的数据分析包
+# 主要的数据分析包
 ```
 import numpy as np
 import pandas as pd
@@ -69,7 +69,7 @@ import scipy.stats as stats
 import seaborn as sns
 import statsmodels.api as sm
 ```
-#Sklearn
+# Sklearn
 ```
 from sklearn import datasets    #本地数据
 from sklearn.model_selection import train_test_split    #进行数据分割

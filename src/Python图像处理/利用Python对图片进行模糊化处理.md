@@ -2,7 +2,8 @@
 大家在制作视频时，是不是见过一种特效：图片从清晰状态慢慢渐变为模糊状态，视频其实也就是每一帧图片拼接组成，今天就来介绍下怎么把图片模糊化，主要运用的原理就是多维高斯滤波器
 
 # 效果展示
-![效果展示](https://upload-images.jianshu.io/upload_images/6641583-22af94fa96abee37.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![效果展示](./images/6641583-22af94fa96abee37.png)
+
 # 小编环境
 ```python
 import sys
@@ -71,9 +72,9 @@ image_path ='秋天的银杏树.jpg'
 blur_image(image_path)
 ```
 # 历史相关文章
-- [Python 利用Matplotlib制作初中时圆规画的图](https://www.jianshu.com/p/88d9b185d108)
-- [Python 利用4行代码实现图片灰度化](https://www.jianshu.com/p/24e7758edfd4)
-- [Python 利用聚类算法对图片进行颜色压缩](https://www.jianshu.com/p/56f5b072e318)
+- [Python 利用Matplotlib制作初中时圆规画的图](../数据可视化/Python-利用Matplotlib制作初中时圆规画的图.md)
+- [Python 利用4行代码实现图片灰度化](./Python-利用4行代码实现图片灰度化.md)
+- [Python 利用聚类算法对图片进行颜色压缩](./Python-利用聚类算法对图片进行颜色压缩.md)
 
 **************************************************************************
 **以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号：DataShare ，不定期分享干货**

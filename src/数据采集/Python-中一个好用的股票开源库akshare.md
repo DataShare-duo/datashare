@@ -4,16 +4,16 @@
 最近大家也看到了曾任《环球时报》总编辑的胡锡进，也开始入市炒股，并且每天都会发博文，分享当天的炒股感受
 
 于是小编就试着获取股票的数据来研究一下，经过查找与对比，小编决定用akshare这个库，因为该库一直有更新，并且文档是中文，而且比较详细，
-![各种数据](https://upload-images.jianshu.io/upload_images/6641583-5103c17b8883b40c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![各种数据](./images/6641583-5103c17b8883b40c.png)
 
 
 akshare文档地址：https://www.akshare.xyz/
-![akshare](https://upload-images.jianshu.io/upload_images/6641583-0d92b578a148d298.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![akshare](./images/6641583-0d92b578a148d298.png)
 
 
 # 股票各种数据获取方法
 **导入akshare库**
-```
+```python
 import akshare as ak
 import pandas as pd
 ```
@@ -21,7 +21,7 @@ import pandas as pd
 ```python
 ak.stock_individual_info_em(symbol="000651")
 ```
-![基本信息](https://upload-images.jianshu.io/upload_images/6641583-a6c61892d8aabeeb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![基本信息](./images/6641583-a6c61892d8aabeeb.png)
 
 **2、实时数据，当日的成交数据**
 
@@ -29,7 +29,7 @@ ak.stock_individual_info_em(symbol="000651")
 ```python
 ak.stock_zh_a_spot_em()   
 ```
-![实时数据](https://upload-images.jianshu.io/upload_images/6641583-09c00f61ab79e4c1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![实时数据](./images/6641583-09c00f61ab79e4c1.png)
 
 **3、历史数据，历史的成交数据**
 ```python
@@ -40,20 +40,20 @@ ak.stock_zh_a_hist(symbol="000651",
                    adjust=""   #不复权
                   )  
 ```
-![历史数据](https://upload-images.jianshu.io/upload_images/6641583-181c138eba4dd376.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![历史数据](./images/6641583-181c138eba4dd376.png)
 
 **4、资金流向数据**
 限量: 单次获取指定市场和股票的近 100 个交易日的资金流数据
 ```python
 ak.stock_individual_fund_flow(stock="000651", market="sz")
 ```
-![资金流向数据](https://upload-images.jianshu.io/upload_images/6641583-e529dee4a2af3e57.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![资金流向数据](./images/6641583-e529dee4a2af3e57.png)
 
 **5、行情报价，买卖各5档**
 ```python
 ak.stock_bid_ask_em(symbol="000651")
 ```
-![行情报价](https://upload-images.jianshu.io/upload_images/6641583-ed81a523264f870b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![行情报价](./images/6641583-ed81a523264f870b.png)
 
 # 每日特定股票数据汇总案例
 *下面展示每日获取特定股票数据，可以做成定时任务，在15:00闭市后获取*
@@ -145,8 +145,9 @@ if __name__ == '__main__':
 
 ```
 # 历史相关文章
-- [Python 中一个好用的地址解析工具cpca](https://www.jianshu.com/p/7953beff8ca3)
-- [Python 除了结巴分词，还有什么好用的中文分词工具？](https://www.jianshu.com/p/2977e24d57b7)
-- [Python 基于datetime库的日期时间数据处理](https://www.jianshu.com/p/9d5883c20835)
+- [Python 中一个好用的地址解析工具cpca](../Python基础库/Python-中一个好用的地址解析工具cpca（chinese_province_city_area_mapper）.md)
+- [Python 除了结巴分词，还有什么好用的中文分词工具？](../NLP/Python-除了结巴分词，还有什么好用的中文分词工具？.md)
+- [Python 基于datetime库的日期时间数据处理](../Python数据处理/Python-基于datetime库的日期时间数据处理.md)
+
 **************************************************************************
 **以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号：DataShare ，不定期分享干货**

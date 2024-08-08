@@ -109,6 +109,10 @@ h6:target::before {
 .content a { text-decoration: none; }
 .content a:hover { text-decoration: underline; }
 .content img, .content video { max-width: 100%; }
+
+
+
+
 .content .header:link,
 .content .header:visited {
     /*color: var(--fg);*/
@@ -230,3 +234,7 @@ kbd {
 .result-no-output {
     font-style: italic;
 }
+
+
+
+

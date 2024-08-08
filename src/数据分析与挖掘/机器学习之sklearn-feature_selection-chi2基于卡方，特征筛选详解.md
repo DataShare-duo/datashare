@@ -1,12 +1,15 @@
 # 统计里面的卡方检验
-卡方检验主要是用来进行 **分类变量（离散变量）**的关联性、相关性分析，其根本思想就是在于比较理论频数和实际频数的吻合程度或拟合优度问题。
+卡方检验主要是用来进行 **分类变量（离散变量）** 的关联性、相关性分析，其根本思想就是在于比较理论频数和实际频数的吻合程度或拟合优度问题。
 
 在统计学里面最经典就是四方格检验，下面列举一个例子，让大家对卡方检验有一个真实的认识：
 现在我们有一些样本，每个人是否喝牛奶，以及是否感冒，形式如下（只截图了一部分），现在我们想知道，**是否喝牛奶** 对 **是否感冒**有影响，根据我们的常识判断，喝牛奶可以增强体质，有助于抵抗感冒，但一切结论都要有依据，才能使大家信服，于是这就用到统计学里面的卡方检验。
-![卡方检验原始数据](https://upload-images.jianshu.io/upload_images/6641583-4198cd8a8170421a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/500
-)
+
+![卡方检验原始数据](./images/6641583-4198cd8a8170421a.webp)
+
 根据上面的数据，我们可以在Excel里面创建透视表，形成一个交叉表（列联表），统计交叉后的频数及占比情况，喝牛奶这一行的感冒率是用感冒的人数43除以喝牛奶总人数139，其他同理，如下所示：
-![交叉表数据](https://upload-images.jianshu.io/upload_images/6641583-d948201c6be657af.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/800)
+
+![交叉表数据](./images/6641583-d948201c6be657af.webp)
+
 通过简单的统计我们得出喝牛奶和不喝牛奶的感冒率为30.94%和25.00%，两者的差别可能是抽样误差导致，也有可能是牛奶对感冒真的有影响。
 
 **先建立假设：
@@ -16,12 +19,12 @@ H1（备择假设）：是否喝牛奶与是否感冒是相关的，也就是喝
 为了确定真实原因，我们先假设喝牛奶对感冒是没有影响的，即喝牛奶和感冒是独立无关的，所以我们可以得出感冒的发病率实际是（43+28）/（43+28+96+84）= 28.29%
 
 所以，理论上的数值如下表所示：
-![理论数值](https://upload-images.jianshu.io/upload_images/6641583-e01172d778f73d52.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/800)
+![理论数值](./images/6641583-e01172d778f73d52.webp)
 
 即下表数据：
-![理论数值](https://upload-images.jianshu.io/upload_images/6641583-aa4a56f5c1c3b923.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/800)
+![理论数值](./images/6641583-aa4a56f5c1c3b923.webp)
 卡方检验的公式为：
-![卡方公式](https://upload-images.jianshu.io/upload_images/6641583-71f10c72c7609f6e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![卡方公式](./images/6641583-71f10c72c7609f6e.webp)
 
 **根据卡方检验公式我们可以得的卡方值为：
 卡方 = (43 - 39.32)^2 / 39.32 + (28 - 31.68)^2 / 31.68 + (96 - 99.68)^2 / 99.68 + (84 - 80.32)^2 / 80.32 = 1.077**
@@ -35,11 +38,11 @@ H1（备择假设）：是否喝牛奶与是否感冒是相关的，也就是喝
 # 官方原始代码
 - github地址：[https://github.com/scikit-learn/scikit-learn/blob/1495f6924/sklearn/feature_selection/univariate_selection.py#L172](https://github.com/scikit-learn/scikit-learn/blob/1495f6924/sklearn/feature_selection/univariate_selection.py#L172)
 - 官方chi2函数主要截图，def chi2(X, y)，红框里面是主要的代码，其他基本都是很好理解，红框上面的是对输入的x进行类型检查：
-![官方chi2函数代码](https://upload-images.jianshu.io/upload_images/6641583-2da62248fc60bf94.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![官方chi2函数代码](./images/6641583-2da62248fc60bf94.webp)
 
 
 # 下面一句一句对官方原始代码进行解析
-```
+```python
 Y = LabelBinarizer().fit_transform(y)
 
 if Y.shape[1] == 1:
@@ -49,33 +52,33 @@ if Y.shape[1] == 1:
 - 下面的if 是为了添加另一个类别，假如y里面只有两个类别的话，那么进行二值化处理后Y就只有1列，也就是只能表示y里面的一个类别，另外一个类别需要再添加上，新加的一列其实也就是对刚才二值化的数据取反
 - 通过上面的理解，在输入y时可以是字符型，也可以是数值型，在机器学习里面大家印象一般都是用数值型数据，但是在这一块可以用字符型，像咱们的汉字等
 *************************
-```
+```python
 observed = safe_sparse_dot(Y.T, X)          # n_classes * n_features
 ```
 - observed意思是观察值，也就是对应卡方里面的真实值，那么这行意思就是求真实值，只不过是用矩阵的乘法来处理
 - 输入的X只能是数值型，这一块是用来进行矩阵乘法，那么也就是输入的分类变量必须处理成数值，需要用到one-hot，对每一个分类变量（离散变量）进行转换，**这一块千万不能用 1 代表类别1， 2 代表类别2， 3 代表类别3 等，否则卡方检验就是错的，所选的特征同样也是错的**，如果分类变量里面只有两个类别的话，可以直接用1，0
 - Y.T 与 X两个矩阵的乘法，结果为y里面每个类别的计数
 ***********************
-```
+```python
 feature_count = X.sum(axis=0).reshape(1, -1)
 class_prob = Y.mean(axis=0).reshape(1, -1)
 expected = np.dot(class_prob.T, feature_count)
 ```
 - 这三句代码是用来求理论数值，首先求出X矩阵每列求和，然后求出Y矩阵里面每个类别的占比（1的个数/总样本，其实也就是直接求平均，为理论占比），最后进行矩阵乘法，求出理论数值
 ***************************
-```
+```python
 return _chisquare(observed, expected)
 ```
 - 用计算卡方的函数传入真实值、理论值，计算出卡方值
 ****************************
 # 下面利用上面的原始代码演示一遍
-![案例原始代码演示](https://upload-images.jianshu.io/upload_images/6641583-054eb4e63d7f1592.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![案例原始代码演示](./images/6641583-054eb4e63d7f1592.webp)
 可以看出这个数值和上面Excel模拟的数值完全一样，最后通过卡方计算函数传入真实值、理论值即可求出  “**卡方值**”
 *******************************
 # 但是，但是，但是 求出来的卡方值，并不是统计上的卡方值、P值
 在sklearn.feature_selection中，用到chi2时，在fit时需要传入X、y，**计算出来的卡方值是 单个特征变量对目标变量y的卡方值**，下面从大家经常使用api的角度去展示上面是否喝牛奶与是否感冒的特征筛选过程
-![特征筛选基于卡方 chi2](https://upload-images.jianshu.io/upload_images/6641583-3ebd8427ca793d11.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-```
+![特征筛选基于卡方 chi2](./images/6641583-3ebd8427ca793d11.webp)
+```python
 sk.scores_
 # array([0.59647887, 0.48061607])
 

@@ -185,7 +185,8 @@ img
   /* margin:0 0;  */ /*图片水平居左，如需要请打开*/
   max-width:100%;
 }
-figcaption/*图片描述文字*/
+
+figcaption /*图片描述文字*/
 {
   margin-top:10px;
   text-align:center;

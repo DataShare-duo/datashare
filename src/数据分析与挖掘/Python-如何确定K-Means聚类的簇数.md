@@ -1,15 +1,15 @@
-#背景
+# 背景
 “人以类聚，物以群分”，在大千世界中总有那么一些人，性格爱好、行为习惯比较相近，我们就会把他们归为一类人，这就是我们人脑自动进行的一个聚类（归类）。
 在数据分析中，我们也经常拿数据来进行K-Means聚类，用来进行一些分析，K-Means聚类可能大家都会，但是如何科学的决策聚类簇数，这一直是聚类的一大难题。今天就来分享一下，自己工作中在确定聚类簇数时要到的方法。
-#方法
-#####可以确定聚类簇数的方法
+# 方法
+##### 可以确定聚类簇数的方法
 - Adjusted Rand index 调整兰德系数
 - Mutual Information based scores 互信息
 - Homogeneity, completeness and V-measure 同质性、完整性、两者的调和平均
 - Silhouette Coefficient 轮廓系数
 - Calinski-Harabaz Index
 - SSE 簇里误差平方和
-#####自己使用的方法，手肘法则SSE 和 轮廓系数 相结合
+##### 自己使用的方法，手肘法则SSE 和 轮廓系数 相结合
 - **SSE 簇里误差平方和**
 
 SSE利用计算误方差和，来实现对不同K值的选取后，每个K值对应簇内的点到中心点的距离误差平方和，理论上SSE的值越小，代表聚类效果越好，通过数据测试，SSE的值会逐渐趋向一个最小值。
@@ -19,17 +19,19 @@ SSE利用计算误方差和，来实现对不同K值的选取后，每个K值对
 
 轮廓系数计算规则：
 针对样本空间中的一个特定样本，计算它与所在簇中其它样本的平均距离a，以及该样本与距离最近的另一个聚类中所有样本的平均距离b，该样本的轮廓系数为
-![单个样本点的轮廓系数](https://upload-images.jianshu.io/upload_images/6641583-a537527f5761238b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![单个样本点的轮廓系数](./images/6641583-a537527f5761238b.webp)
+
 **详细分解**
+
 对于其中的一个点 i 来说：
 计算 a(i) = average(i向量到所有它属于的簇中其它点的距离)
 计算 b(i) = min (i向量到各个非本身所在簇的所有点的平均距离)
-![分解步骤](https://upload-images.jianshu.io/upload_images/6641583-e62b2bc1db0000b4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1040)
+![分解步骤](./images/6641583-e62b2bc1db0000b4.webp)
 
 然后将整个样本空间中所有样本的轮廓系数取算数平均值，作为聚类划分的性能指标**轮廓系数**
 
 轮廓系数的区间为：[-1, 1]。 -1代表分类效果差，1代表分类效果好。0代表聚类重叠，没有很好的划分聚类
-#应用、代码
+# 应用、代码
 以鸢尾花数据集为案例
 ```python
 from sklearn import datasets
@@ -94,7 +96,7 @@ for x,y in zip(k_sil,silhouette_score):
 
 plt.show()
 ```
-![iris 聚类](https://upload-images.jianshu.io/upload_images/6641583-00c05a8fc9c2ab7e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![iris 聚类](./images/6641583-00c05a8fc9c2ab7e.webp)
 结合SSE与轮廓系数，当k=3时比较适合，可以确定聚类的簇数为3
 
 而鸢尾花数据集里面真实的分类就是3类
@@ -102,10 +104,10 @@ plt.show()
 iris['target_names']
 #array(['setosa', 'versicolor', 'virginica'], dtype='<U10')
 ```
-#历史相关文章
-- [利用熵值法确定指标权重---原理及Python实现](https://www.jianshu.com/p/01ea5aa06e57)
-- [罗兰贝格图--Python等高线图（平滑处理）](https://www.jianshu.com/p/c89521fb42fc)
+# 历史相关文章
+- [利用熵值法确定指标权重---原理及Python实现](./利用熵值法确定指标权重---原理及Python实现.md)
+- [罗兰贝格图--Python等高线图（平滑处理）](../数据可视化/罗兰贝格图--Python等高线图（平滑处理）.md)
 
 **************************************************************************
 **以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号，不定期分享干货**
-![](https://upload-images.jianshu.io/upload_images/6641583-bce6d13cc37824d7.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/240)
+

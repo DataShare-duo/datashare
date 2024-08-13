@@ -34,11 +34,12 @@ mount -t ntfs-3g /dev/sdb1  /mnt/Windows
 ```shell
 umount /dev/sdb1
 ```
-<br/>
+
 ***硬盘挂载基本就以上这四步，下面主要列出其他格式硬盘挂载的重点步骤***
-<br/>
+
 # FAT32挂载
 不需要驱动，可以直接挂载
+
 下面的挂载命令 支持 **中文、挂载后不同用户可读写权限**，具体参数含义可自行百度查询
 
 第三步：挂载硬盘
@@ -60,7 +61,7 @@ mount /dev/sdb2  /mnt/Windows
 - 硬盘里面具体要看有几个分区，挂载时指定分区号 `sdb1` or `sdb2`
 
 # 历史相关文章
-- [Linux （Centos 7）中 Anaconda环境管理，安装不同的版本Python包](https://www.jianshu.com/p/bc5af6c078a8)
-- [Python文件打包成exe可执行程序](https://www.jianshu.com/p/f582fb4ce808)
+- [Linux （Centos 7）中 Anaconda环境管理，安装不同的版本Python包](./Linux-（Centos-7）中-Anaconda环境管理，安装不同的版本Python包.md)
+- [Python文件打包成exe可执行程序](../Python基础库/Python文件打包成exe可执行程序.md)
 **************************************************************************
 **以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注DataShare，不定期分享干货**

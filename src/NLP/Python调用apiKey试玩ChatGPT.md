@@ -3,8 +3,9 @@
 
 # GPT发展历程
 官方的模型介绍文档：
+
 从文档可以看出，开放的api是GPT-3，所以在调动api时，使用的模型是GPT-3，但是OpenAI官网的聊天，使用的是GPT-3.5，所以同样的问题，回答可能会不一样，
-![发展历程](https://upload-images.jianshu.io/upload_images/6641583-1736ed74cf830471.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![发展历程](./images/6641583-1736ed74cf830471.webp)
 
 >GPT-3（Generative Pre-trained Transformer 3，简称GPT-3）指的是生成型预训练变换模型第3版，是一个自回归语言模型，目的是为了使用深度学习生成人类可以理解的自然语言
 
@@ -21,12 +22,12 @@
 现在国内有一些网站、微信群基于api接口，开发出来供大家尝鲜使用，但基于的是不是OpenAI的api接口，这个有待验证（**国内的开发大家都知道，喜欢骗人，要么是广告，要么调用就不是真正的OpenAI接口**），所以大家在试玩的时候，得注意安全
 
 # 基于官方网页版试玩
-![测试-1](https://upload-images.jianshu.io/upload_images/6641583-67cc51d92fa22d63.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![测试-1](./images/6641583-67cc51d92fa22d63.webp)
 
-![测试-2](https://upload-images.jianshu.io/upload_images/6641583-4cebd6c336021fa6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![测试-2](./images/6641583-4cebd6c336021fa6.webp)
 
 # 基于apikey试玩
-![apikey](https://upload-images.jianshu.io/upload_images/6641583-473e46eb08add0ed.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1040)
+![apikey](./images/6641583-473e46eb08add0ed.webp)
 
 
 ```python
@@ -47,8 +48,8 @@ print(response.choices[0].text)
 ```
 
 # 历史相关文章
-- [Python 人脸检测方法总结](https://www.jianshu.com/p/5dfe4ed2873d)
-- [自然语言处理（NLP） Bert与Lstm结合](https://www.jianshu.com/p/767931a5b994)
+- [Python 人脸检测方法总结](../Python图像处理/Python-人脸检测方法总结.md)
+- [自然语言处理（NLP） Bert与Lstm结合](./自然语言处理（NLP）-Bert与Lstm结合.md)
 
 **************************************************************************
 **以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号：DataShare ，不定期分享干货**

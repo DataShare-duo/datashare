@@ -12,10 +12,12 @@
 >- **支持移动端**: 定制超轻量级模型，体积仅为2M，主流千元手机单线程性能达200QPS，满足大多数移动端应用的需求，同等体积量级效果业内领先。
 
 功能看着很强大，但是这里只用到中文分词功能，下面介绍一下使用的demo，
+
 通过 `pip install lac` 进行安装即可
 
 # 使用教程
 **直接使用lac分词**
+
 加载`LAC `后，通过其自带的模型进行分词，结果为一个列表
 ```python
 from LAC import LAC
@@ -29,10 +31,13 @@ lac.run(text)
 text_list=['我是一名北漂的打工人、干饭人','5月15日，航天科研人员在北京航天飞行控制中心指挥大厅庆祝我国首次火星探测任务着陆火星成功']
 lac.run(text_list)
 ```
-![直接使用lac分词](https://upload-images.jianshu.io/upload_images/6641583-70eb2250ac02085d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1040)
+![直接使用lac分词](./images/6641583-70eb2250ac02085d.webp)
+
+
 **加载自定义字典**
+
 从上面可以看出“打工人”可以正确分词，但是“干饭人”不能正确的切分，可以通过加载自定义字典来进行处理这种情况
-![自定义字典](https://upload-images.jianshu.io/upload_images/6641583-8fd0e1d46a6409ae.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/640)
+![自定义字典](./images/6641583-8fd0e1d46a6409ae.webp)
 ```python
 from LAC import LAC
 
@@ -49,12 +54,14 @@ text_list=['我是一名北漂的打工人、干饭人',
            '5月15日，航天科研人员在北京航天飞行控制中心指挥大厅庆祝我国首次火星探测任务着陆火星成功']
 lac.run(text_list)
 ```
-![加载自定义字典](https://upload-images.jianshu.io/upload_images/6641583-079ffa957b927545.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1040)
+![加载自定义字典](./images/6641583-079ffa957b927545.webp)
 
 从上面的输出结果可以看出，已经正确分词
 
 # 历史相关文章
-- [自然语言处理（NLP） Bert与Lstm结合](https://www.jianshu.com/p/767931a5b994)
-- [Python加载txt数据乱码问题升级版解决方法](https://www.jianshu.com/p/e2572f67c983)
+- [自然语言处理（NLP） Bert与Lstm结合](./自然语言处理（NLP）-Bert与Lstm结合.md)
+- [Python加载txt数据乱码问题升级版解决方法](../Python数据处理/Python加载txt数据乱码问题升级版解决方法.md)
+
 **************************************************************************
 **以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号：DataShare ，不定期分享干货**
+

@@ -5,12 +5,15 @@
 >unix时间戳是从1970年1月1日（UTC/GMT的午夜）开始所经过的秒数，不考虑闰秒，一般为10位的整数
 
 *一个在线工具：https://tool.lu/timestamp/*
-![时间戳](https://upload-images.jianshu.io/upload_images/6641583-296fcd7bf38de1de.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![时间戳](./images/6641583-296fcd7bf38de1de.webp)
 
 
 
 **字符串日期**
+
 如：'2021-10-21 19:25:50'，'2021-10-21 20:25:50.0'，'2021-10-21 20:25'
+
 # 日期格式转换
 **时间戳--->正常的日期格式**
 
@@ -29,6 +32,7 @@ select from_unixtime(cast(create_time/1000 as bigint),'yyyyMMdd') as dt
 ```
 
 **字符串日期**
+
 假如数据库存放的是格式为："yyyy-MM-dd hh:mm:ss"
 
 - 截取日期部分
@@ -65,6 +69,7 @@ select date_sub(current_date(),1);
 2021-10-21
 ```
 **前一日12点/昨日12点**
+
 在业务中与截取的字符串日期进行比较时用
 ```sql
 select concat(date_format(date_sub(current_date(),1),'yyyy-MM-dd'),' ','12');
@@ -76,6 +81,7 @@ select date_sub(current_date(),30);
 2021-09-22
 ```
 **当月第一天**
+
 业务中经常用在滚动计算当月每日的业绩数据
 ```sql
 select date_format(to_date(trunc(current_date(),'MM')),"yyyy-MM-dd");
@@ -93,8 +99,8 @@ select datediff('2021-10-22', '2021-10-01');
 ```
 
 # 历史相关文章
-- [Hive HQL支持的2种查询语句风格，你喜欢哪一种？](https://www.jianshu.com/p/5959856ce67a)
-- [Python 基于datetime库的日期时间数据处理](https://www.jianshu.com/p/9d5883c20835)
+- [Hive HQL支持的2种查询语句风格，你喜欢哪一种？](./Hive---HQL支持的2种查询语句风格，你喜欢哪一种？.md)
+- [Python 基于datetime库的日期时间数据处理](../Python数据处理/Python-基于datetime库的日期时间数据处理.md)
 
 **************************************************************************
 **以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号：DataShare ，不定期分享干货**

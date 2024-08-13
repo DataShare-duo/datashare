@@ -2,7 +2,7 @@
 最近对用户的行为数据进行统计分析时，需要列出不同用户的具体详情，方便进行观察，在hive中虽然有排序函数，但是处理键值对数据时，不能根据值进行排序，需要巧妙借助中间过程来处理，总结出来与大家进行分享，也方便后面自己查找使用
 
 # 预想效果
-![键值对排序](https://upload-images.jianshu.io/upload_images/6641583-35ef6a6cc9cfc362.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/640)
+![键值对排序](./images/6641583-35ef6a6cc9cfc362.webp)
 
 # 创建测试数据
 ```sql
@@ -19,10 +19,10 @@ ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\n';
 load data local inpath '/tmp/datashare.txt' overwrite into table tmp_datashare;
 ```
 
-<br/>
-**测试数据：**
 
-![测试数据](https://upload-images.jianshu.io/upload_images/6641583-87b347576a9c9041.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/640)
+**测试数据：** 
+
+![测试数据](./images/6641583-87b347576a9c9041.webp)
 
 # 数据处理过程
 >**数据处理具体步骤：**
@@ -53,12 +53,13 @@ from c
 ```
 
 **结果数据：**
-![结果数据](https://upload-images.jianshu.io/upload_images/6641583-4b5516695d911ee4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![结果数据](./images/6641583-4b5516695d911ee4.webp)
 
 # 历史相关文章
-- [Hive中的常用函数](https://www.jianshu.com/p/e550d30ad12d)
-- [Hive中各种日期格式转换方法总结](https://www.jianshu.com/p/55f9683c63f1)
-- [Hive HQL支持的2种查询语句风格，你喜欢哪一种？](https://www.jianshu.com/p/5959856ce67a)
+- [Hive中的常用函数](./Hive中的常用函数.md)
+- [Hive中各种日期格式转换方法总结](./Hive中各种日期格式转换方法总结.md)
+- [Hive HQL支持的2种查询语句风格，你喜欢哪一种？](./Hive---HQL支持的2种查询语句风格，你喜欢哪一种？.md)
 
 **************************************************************************
 **以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号：DataShare ，不定期分享干货**

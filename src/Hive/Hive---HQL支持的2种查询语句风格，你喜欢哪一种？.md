@@ -46,7 +46,8 @@ order by xxxx
 - 风格一：用的最多，从结果向源头倒着推
 - 风格二：容易理解，从源头向结果正向推
 # 历史相关文章
-- [Python 利用Pandas把数据直接导入Mysql](https://www.jianshu.com/p/6cb8bcf0ca36)
-- [Python 基于ssh连接远程Mysql数据库](https://www.jianshu.com/p/e86c247da544)
+- [Python 利用Pandas把数据直接导入Mysql](../Python数据处理/Python-利用Pandas把数据直接导入Mysql.md)
+- [Python 基于ssh连接远程Mysql数据库](../Python基础库/Python-基于ssh连接远程Mysql数据库.md)
+
 **************************************************************************
 **以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号：DataShare ，不定期分享干货**

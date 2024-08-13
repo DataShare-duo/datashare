@@ -1,6 +1,6 @@
-#背景介绍
+# 背景介绍
 自然语言处理（NLP）在深度学习领域是一大分支（其他：CV、语音），经过这些年的发展NLP发展已经很成熟，同时在工业界也慢慢开始普及，谷歌开放的Bert是NLP前进的又一里程碑。本篇文章结合Bert与Lstm，对文本数据进行二分类的研究。
-#需要的第三方库
+# 需要的第三方库
 - pandas
 - numpy
 - torch
@@ -8,11 +8,13 @@
 - sklearn
 
 以上这些库需要读者对机器学习、深度学习有一定了解
-#数据及预训练Bert
-- 预训练好的Bert（BERT-wwm, Chinese  中文维基）
-https://github.com/ymcui/Chinese-BERT-wwm
-- 语料
-https://github.com/duo66/Data_for_ML-Deeplearning/blob/master/dianping.csv
+
+# 数据及预训练Bert
+- 预训练好的Bert（BERT-wwm, Chinese  中文维基）<br/>
+[https://github.com/ymcui/Chinese-BERT-wwm](https://github.com/ymcui/Chinese-BERT-wwm)
+- 语料 <br/>
+[https://github.com/duo66/Data_for_ML-Deeplearning/blob/master/dianping.csv](https://github.com/duo66/Data_for_ML-Deeplearning/blob/master/dianping.csv)
+
 # 完整过程
 - **数据预处理**
 ```python
@@ -28,11 +30,9 @@ torch.manual_seed(2020)
 USE_CUDA = torch.cuda.is_available()
 if USE_CUDA:
     torch.cuda.manual_seed(2020)
-```
-```python
+
 data=pd.read_csv('./dianping.csv',encoding='utf-8')
-```
-```python
+
 #剔除标点符号,\xa0 空格
 def pretreatment(comments):
     result_comments=[]
@@ -43,11 +43,9 @@ def pretreatment(comments):
         result_comments.append(comment)
     
     return result_comments
-```
-```python
+
 result_comments=pretreatment(list(data['comment'].values))
-```
-```python
+
 len(result_comments)
 ```
 2000
@@ -61,11 +59,9 @@ result_comments[:1]
 from transformers import BertTokenizer,BertModel
 
 tokenizer = BertTokenizer.from_pretrained("./chinese-bert_chinese_wwm_pytorch/data")
-```
-```python
+
 result_comments_id=tokenizer(result_comments,padding=True,truncation=True,max_length=200,return_tensors='pt')
-```
-```python
+
 result_comments_id
 ```
 {'input_ids': tensor([[ 101, 1366, 1456,  ...,    0,    0,    0],
@@ -102,18 +98,17 @@ X=result_comments_id['input_ids']
 y=torch.from_numpy(data['sentiment'].values).float()
 
 X_train,X_test, y_train, y_test =train_test_split(X,y,test_size=0.3,shuffle=True,stratify=y,random_state=2020)
-```
-```python
+
 len(X_train),len(X_test)
 ```
 (1400, 600)
 ```python
 X_valid,X_test,y_valid,y_test=train_test_split(X_test,y_test,test_size=0.5,shuffle=True,stratify=y_test,random_state=2020)
-```
-```python
+
 len(X_valid),len(X_test)
 ```
  (300, 300)
+ 
 ```python
 X_train.shape
 ```
@@ -308,11 +303,12 @@ for e in range(epochs):
                   "Loss: {:.6f}...".format(loss.item()),
                   "Val Loss: {:.6f}".format(np.mean(val_losses)))
 ```
-Epoch: 1/10... Step: 7... Loss: 0.679703... Val Loss: 0.685275
-Epoch: 1/10... Step: 14... Loss: 0.713852... Val Loss: 0.674887
-.............
-Epoch: 10/10... Step: 35... Loss: 0.078265... Val Loss: 0.370415
-Epoch: 10/10... Step: 42... Loss: 0.171208... Val Loss: 0.323075
+Epoch: 1/10... Step: 7... Loss: 0.679703... Val Loss: 0.685275 <br/>
+Epoch: 1/10... Step: 14... Loss: 0.713852... Val Loss: 0.674887  <br/>
+.............  <br/>
+Epoch: 10/10... Step: 35... Loss: 0.078265... Val Loss: 0.370415  <br/>
+Epoch: 10/10... Step: 42... Loss: 0.171208... Val Loss: 0.323075  
+
 - **测试**
 ```python
 test_losses = [] # track loss
@@ -346,6 +342,7 @@ print("Test accuracy: {:.3f}".format(test_acc))
 ```
 Test loss: 0.442
 Test accuracy: 0.827
+
 - **直接用训练的模型推断**
 ```python
 def predict(net, test_comments):
@@ -383,18 +380,21 @@ predict(net, comment1)
 ```
  预测概率为: 0.015379
  预测结果为:负向
+ 
 ```python
 comment2 = ['环境不错']
 predict(net, comment2)
 ```
 预测概率为: 0.972344
 预测结果为:正向
+
 ```python
 comment3 = ['服务员还可以，就是菜有点不好吃']
 predict(net, comment3)
 ```
 预测概率为: 0.581665
 预测结果为:正向
+
 ```python
 comment4 = ['服务员还可以，就是菜不好吃']
 predict(net, comment4)
@@ -402,11 +402,13 @@ predict(net, comment4)
 预测概率为: 0.353724
 预测结果为:负向
 - **保存模型**
+
 ```python
 # 保存
 torch.save(net.state_dict(), './大众点评二分类_parameters.pth')
 ```
 - **加载保存的模型，进行推断**
+
 ```python
 output_size = 1
 hidden_dim = 384   #768/2
@@ -419,6 +421,7 @@ net = bert_lstm(hidden_dim, output_size,n_layers, bidirectional)
 net.load_state_dict(torch.load('./大众点评二分类_parameters.pth'))
 ```
 <All keys matched successfully>
+
 ```python
 # move model to GPU, if available
 if(USE_CUDA):
@@ -433,4 +436,7 @@ predict(net, comment1)
 预测概率为: 0.015379
 预测结果为:负向
 
-    
+**************************************************************************
+**以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号：DataShare ，不定期分享干货**
+
+

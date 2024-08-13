@@ -4,14 +4,19 @@
 # 常用函数
 **set类设置**
 - 查询结果显示表头
+
 set hive.cli.print.header=true;
 - 设置Fetch抓取，不走job
+
 set hive.fetch.task.conversion=more;
 - 展示数据库
+
 set hive.cli.print.current.db=true;
+
 - 修改是否使用静默
+
 set hive.compute.query.using.stats=false;
-<br>
+
 **日期类函数**
 - 当天
 ```sql
@@ -46,7 +51,7 @@ select pmod(datediff(current_date(),'1900-01-08'),7)+1
 select unix_timestamp()
 运行结果：'1660212154'
 ```
-<br>
+
 **字符串类函数**
 - 字符拼接
 ```sql
@@ -69,7 +74,7 @@ select concat_ws(',','a',null,'c')   --会忽略null
 select concat_ws(',',null,null,null)  --返回空字符，而不是null
 运行结果：''
 ```
-<br>
+
 **窗口类函数**
 - ROW_NUMBER() –从1开始，按照顺序，生成分组内记录的序列
 
@@ -84,13 +89,14 @@ select concat_ws(',',null,null,null)  --返回空字符，而不是null
 第一个参数为列名，第二个参数为往下第n行（可选，默认为1），第三个参数为默认值（当往下第n行为NULL时候，取默认值，如不指定，则为NULL）
 
 ***更多窗口函数可参考***
-《Hive分析函数系列文章》
-http://lxw1234.com/archives/2015/07/367.htm
+
+《Hive分析函数系列文章》：<br/>
+[http://lxw1234.com/archives/2015/07/367.htm](http://lxw1234.com/archives/2015/07/367.htm)
 
 
 # 历史相关文章
-- [Hive中各种日期格式转换方法总结](https://www.jianshu.com/p/55f9683c63f1)
-- [Hive HQL支持的2种查询语句风格，你喜欢哪一种？](https://www.jianshu.com/p/5959856ce67a)
+- [Hive中各种日期格式转换方法总结](./Hive中各种日期格式转换方法总结.md)
+- [Hive HQL支持的2种查询语句风格，你喜欢哪一种？](./Hive---HQL支持的2种查询语句风格，你喜欢哪一种？.md)
 
 **************************************************************************
 **以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号：DataShare ，不定期分享干货**

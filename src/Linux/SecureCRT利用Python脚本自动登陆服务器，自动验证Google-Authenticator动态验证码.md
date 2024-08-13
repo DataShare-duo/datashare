@@ -4,40 +4,48 @@
 最近因公司加强了服务器登陆验证，增加了二次认证，必须用Google Authenticator输入6位动态验证码，才能成功登陆，这样的话每次都得打开手机，手动输入验证码比较麻烦
 
 在 **Python** 中有这样的库 **`pyotp`** 可以直接生成Google Authenticator输入6位动态验证码，前提是你知道谷歌验证码对应的密钥，一般是在最开始让扫描二维的下方会提示出来
-![密钥](https://upload-images.jianshu.io/upload_images/6641583-9f8fb33899255edd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![密钥](./images/6641583-9f8fb33899255edd.webp)
 
 
 SecureCRT支持利用一些语言脚本来实现自动登陆，比如：python、vbs，本篇文章来介绍如何利用 **python** 脚本自动登陆
-![登陆动作](https://upload-images.jianshu.io/upload_images/6641583-e934a70f3e36ab52.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![登陆动作](./images/6641583-e934a70f3e36ab52.webp)
 
 # SecureCRT版本
 电脑为Win10操作系统
+
 SecureCRT版本：Version 6.7.0 (build 153)  
+
 SecureCRT中的python版本：python2.6   （可以在安装文件里面查看到）
-![SecureCRT版本](https://upload-images.jianshu.io/upload_images/6641583-efcf26b29721bf65.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-![支持python版本](https://upload-images.jianshu.io/upload_images/6641583-3d29d04307c1aa48.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![SecureCRT版本](./images/6641583-efcf26b29721bf65.webp)
+![支持python版本](./images/6641583-3d29d04307c1aa48.webp)
 
 **由于没有更新SecureCRT版本，一直用的老版本，支持的python也算是比较老了！！！**
+
 最新的SecureCRT版本是支持python3，但是需要进行一些设置，相对比较麻烦，感兴趣的话可以看看这篇文章：
+
 《How-To: Use Python 3.8 with SecureCRT v9.0 for Windows》
-https://forums.vandyke.com/showthread.php?t=14295
+
+[https://forums.vandyke.com/showthread.php?t=14295](https://forums.vandyke.com/showthread.php?t=14295)
 
 # 遇到问题
 参考网上分享的一些例子，在 `import pyotp` 时总是会报错
 
-《python 实现 jumpserver 自动登录》
-https://mp.weixin.qq.com/s/aLazW8WUVfvsICnHXes3CA
+《python 实现 jumpserver 自动登录》<br/>
+[https://mp.weixin.qq.com/s/aLazW8WUVfvsICnHXes3CA](https://mp.weixin.qq.com/s/aLazW8WUVfvsICnHXes3CA)
 
 
-![报错](https://upload-images.jianshu.io/upload_images/6641583-5bb1acb71ad6588a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![报错](./images/6641583-5bb1acb71ad6588a.webp)
 
 即使添加了python包路径也不行，一直报错，`pyotp` 是兼容python2、python3所有版本
-![添加路径](https://upload-images.jianshu.io/upload_images/6641583-441b387ecdec557e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![添加路径](./images/6641583-441b387ecdec557e.webp)
 
 # 解决方法
 通过提示可以看出，`import sys` 时并没有报错，说明python内置的包，是可以直接导入使用的，经过测试把 `pyotp` 源码中涉及到生成动态码的库import时，没有报错，说明已经走通了
 
 这时就需要剖析 `pyotp` 源码，有哪些是生成生成动态码必须的，把冗余的代码全部剔除即可，经过分析也就是两个类有用，如下所示：
+
 ```python
 class OTP(object):
     def __init__(self, s, digits=6, digest= hashlib.sha1, name= None,issuer= None):
@@ -193,9 +201,9 @@ Main()
 ```
 
 # 历史相关文章
-- [数据分析师常用的 Linux 命令总结](https://www.jianshu.com/p/cee9a549f080)
-- [Python 基于ssh连接远程Mysql数据库](https://www.jianshu.com/p/e86c247da544)
-- [Linux （Centos 7）中 Anaconda环境管理，安装不同的版本Python包](https://www.jianshu.com/p/bc5af6c078a8)
+- [数据分析师常用的 Linux 命令总结](./数据分析师常用的-Linux-命令总结.md)
+- [Python 基于ssh连接远程Mysql数据库](../Python基础库/Python-基于ssh连接远程Mysql数据库.md)
+- [Linux （Centos 7）中 Anaconda环境管理，安装不同的版本Python包](./Linux-（Centos-7）中-Anaconda环境管理，安装不同的版本Python包.md)
 
 **************************************************************************
 **以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号：DataShare ，不定期分享干货**

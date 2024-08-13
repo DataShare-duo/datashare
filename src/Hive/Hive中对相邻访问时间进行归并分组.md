@@ -2,7 +2,7 @@
 对用户每天的访问次数进行统计时，需要对用户访问页面相邻的时间间隔小于30分钟归并为一组（算是一次），这样可以统计出用户每天的访问次数（忽略隔天问题）。这个问题如果用python来处理可能比较方便，可以循环遍历每行，进行两两之间的比较。利用Hive来处理数据，劣势就是不能循环遍历不够灵活，但是也能处理，只是过程相对比较复杂
 
 # 模拟数据与预想的效果
-![归并分组](https://upload-images.jianshu.io/upload_images/6641583-f3de28f31095115f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![归并分组](./images/6641583-f3de28f31095115f.png)
 
 # 创建测试数据
 ```sql
@@ -19,12 +19,15 @@ load data local inpath '/tmp/datashare.txt' overwrite into table test.tmp_datash
 ```
 
 **测试数据：**
-![测试数据](https://upload-images.jianshu.io/upload_images/6641583-03172fd0c8e84a88.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![测试数据](./images/6641583-03172fd0c8e84a88.png)
 
 # 数据处理过程
 - **数据处理的难点：**
+
 1、时间处理需要用到 `UNIX_TIMESTAMP` 转换为时间戳
+
 2、运用窗口函数 `LAG` 提取前一行的访问时间
+
 3、再次运用窗口函数 `SUM` 进行归并分组
 
 
@@ -53,13 +56,13 @@ order by user_id,create_time
 
 ```
 - **结果数据：**
-![结果数据](https://upload-images.jianshu.io/upload_images/6641583-97bd8e734f50c3ce.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![结果数据](./images/6641583-97bd8e734f50c3ce.png)
 
 # 历史相关文章
-- [Hive 数据聚合成键值对时，根据值大小进行排序](https://www.jianshu.com/p/83a1b63158c6)
-- [Hive中的常用函数](https://www.jianshu.com/p/e550d30ad12d)
-- [Hive中各种日期格式转换方法总结](https://www.jianshu.com/p/55f9683c63f1)
-- [Hive HQL支持的2种查询语句风格，你喜欢哪一种？](https://www.jianshu.com/p/5959856ce67a)
+- [Hive 数据聚合成键值对时，根据值大小进行排序](./Hive-数据聚合成键值对时，根据值大小进行排序.md)
+- [Hive中的常用函数](./Hive中的常用函数.md)
+- [Hive中各种日期格式转换方法总结](./Hive中各种日期格式转换方法总结.md)
+- [Hive HQL支持的2种查询语句风格，你喜欢哪一种？](./Hive---HQL支持的2种查询语句风格，你喜欢哪一种？.md)
 
 **************************************************************************
 **以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号：DataShare ，不定期分享干货**

@@ -58,6 +58,7 @@
 		- [Python用xlwings库处理Excel](Python数据处理/Python用xlwings库处理Excel.md)
 		- [Python中的Lambda匿名函数](Python数据处理/Python中的Lambda匿名函数.md)
 		- [Pythonner还在为了练习Numpy而没有真实数据而烦恼吗？](Python数据处理/Pythonner还在为了练习Numpy而没有真实数据而烦恼吗？.md)
+		- [Python 利用矢量化，计算2个经纬度之间的距离](Python数据处理/Python-利用矢量化，计算2个经纬度之间的距离.md)
 		
 	- [polars-学习]()
 		- [Python polars学习 01_读取与写入文件](polars-学习/Python_polars学习-01_读取与写入文件.md)

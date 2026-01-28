@@ -61,6 +61,8 @@
 		- [Python 利用矢量化，计算2个经纬度之间的距离](Python数据处理/Python-利用矢量化，计算2个经纬度之间的距离.md)
 		- [Python pandas中重排列与列重名](Python数据处理/Python-pandas中重排列与列重名.md)
 		
+        
+        
 	- [polars-学习]()
 		- [Python polars学习 01_读取与写入文件](polars-学习/Python_polars学习-01_读取与写入文件.md)
 		- [Python polars学习 02_上下文与表达式](polars-学习/Python_polars学习-02_上下文与表达式.md)
@@ -72,6 +74,8 @@
 		- [Python polars学习 08_分类数据处理](polars-学习/Python_polars学习-08_分类数据处理.md)
 		- [Python polars学习 09_数据框关联与拼接](polars-学习/Python_polars学习-09_数据框关联与拼接.md)
 		- [Python polars学习 10-时间序列类型](polars-学习/Python-polars学习-10-时间序列类型.md)
+        - [Python-polars学习-11-用户自定义函数](polars-学习/Python-polars学习-11-用户自定义函数.md)
+
 
 		
 		
@@ -82,7 +86,7 @@
 		- [Matplotlib-自定义函数实现左边柱形图，右边饼图](数据可视化/Matplotlib-自定义函数实现左边柱形图，右边饼图.md)
 		- [Python-基于pyecharts自定义经纬度热力图可视化](数据可视化/Python-基于pyecharts自定义经纬度热力图可视化.md)
 		- [Python-利用Matplotlib制作初中时圆规画的图](数据可视化/Python-利用Matplotlib制作初中时圆规画的图.md)
-
+        
 	
 	
 	- [Python图像处理]()
@@ -92,6 +96,11 @@
 		- [Python---opencv一次读取视频里面多张视频帧](Python图像处理/Python---opencv一次读取视频里面多张视频帧.md)
 		- [Python-人脸检测方法总结](Python图像处理/Python-人脸检测方法总结.md)
 		- [Python基于opencv-“三维”旋转图片，解决日常小问题](Python图像处理/Python基于opencv-“三维”旋转图片，解决日常小问题.md)
+        - [Python-利用4行代码实现图片灰度化](Python图像处理/Python-利用4行代码实现图片灰度化.md)
+        - [Python-利用聚类算法对图片进行颜色压缩](Python图像处理/Python-利用聚类算法对图片进行颜色压缩.md)
+        - [Python-微信头像添加国旗](Python图像处理/Python-微信头像添加国旗.md)
+        - [Python-一个在本地给图片添加水印的小工具](Python图像处理/Python-一个在本地给图片添加水印的小工具.md)
+        - [利用Python生成手绘效果的图片](Python图像处理/利用Python生成手绘效果的图片.md)
 
 
 
@@ -117,6 +126,8 @@
 		- [Python-除了结巴分词，还有什么好用的中文分词工具？](NLP/Python-除了结巴分词，还有什么好用的中文分词工具？.md)
 		- [Python调用apiKey试玩ChatGPT](NLP/Python调用apiKey试玩ChatGPT.md)
 		- [自然语言处理（NLP）-Bert与Lstm结合](NLP/自然语言处理（NLP）-Bert与Lstm结合.md)
+        - [基于DeepSeek，构建个人本地RAG知识库](NLP/基于DeepSeek，构建个人本地RAG知识库.md)
+
 		
 		
 	-[数学知识]()
@@ -136,6 +147,7 @@
 	- [Hive-中的各种常用set设置](Hive/Hive-中的各种常用set设置.md)
 	- [Hive中对相邻访问时间进行归并分组](Hive/Hive中对相邻访问时间进行归并分组.md)
 	- [Hive中各种日期格式转换方法总结](Hive/Hive中各种日期格式转换方法总结.md)
+    - [hadoop-常用命令总结](Hive/hadoop-常用命令总结.md)
 
 
 
@@ -148,6 +160,13 @@
 	- [SecureCRT利用Python脚本自动登陆服务器，自动验证Google-Authenticator动态验证码](Linux/SecureCRT利用Python脚本自动登陆服务器，自动验证Google-Authenticator动态验证码.md)
 	- [数据分析师常用的-Linux-命令总结](Linux/数据分析师常用的-Linux-命令总结.md)
 	- [在Linux服务器上部署Jupyter-notebook](Linux/在Linux服务器上部署Jupyter-notebook.md)
+
+
+---
+- [Clickhouse]()
+    - [Clickhouse-读取存储在hdfs的hive表数据](Clickhouse/Clickhouse-读取存储在hdfs的hive表数据.md)
+    - [Clickhouse-基础使用教程](Clickhouse/Clickhouse-基础使用教程.md)
+    - [Clickhouse中创建生成日期序列自定义函数](Clickhouse/Clickhouse中创建生成日期序列自定义函数.md)
 
 
 

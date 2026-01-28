@@ -46,10 +46,10 @@ touxiang.save('自己头像-国庆.png')
 
 ```
 # 历史相关文章
-- [利用Python 自己动手制作动漫效果图片](https://www.jianshu.com/p/359c8cbdda63)
-- [利用Python对图片进行马赛克处理](https://www.jianshu.com/p/f9d34f251112)
-- [利用Python生成手绘效果的图片](https://www.jianshu.com/p/40e353ec75bd)
-- [Python 利用聚类算法对图片进行颜色压缩](https://www.jianshu.com/p/56f5b072e318)
+- [利用Python 自己动手制作动漫效果图片](./利用Python-自己动手制作动漫效果图片.md)
+- [利用Python对图片进行马赛克处理](./利用Python对图片进行马赛克处理.md)
+- [利用Python生成手绘效果的图片](./利用Python生成手绘效果的图片.md)
+- [Python 利用聚类算法对图片进行颜色压缩](./Python-利用聚类算法对图片进行颜色压缩.md)
 
 **************************************************************************
 **以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号：DataShare ，不定期分享干货**

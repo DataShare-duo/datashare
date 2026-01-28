@@ -13,18 +13,18 @@
 *题外话，三角函数中余弦函数运用的比较多，在计算向量（文本、语音向量化）的相似度，这里的离散余弦变换*
 # 原始图片，4.47MB
 本文演示的图片数据，均基于该张图片，故宫.jpg
-![故宫](https://upload-images.jianshu.io/upload_images/6641583-b4987dcbb5200571.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/320)
+![故宫](./images/6641583-b4987dcbb5200571.webp)
 
 # 颜色压缩效果
 4032*3024 行=12192768 行，也就是1219万个像素点、1219万个颜色点
 压缩为10个颜色点、128个颜色点
 
-![压缩效果](https://upload-images.jianshu.io/upload_images/6641583-ee5e7b89b2ff2a09.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![压缩效果](./images/6641583-ee5e7b89b2ff2a09.webp)
 
 
 # 图片数据介绍
 大家都知道一个像素可以表示为R（红色 Red）、G（绿色 Green）、B（蓝色 Blue）三个数值组成，照片是一个颜色矩阵，可以理解为每行由指定的像素点排成一行组成，这样由很多行就组合成了一个图片，千万别被高级名词：三维矩阵吓到
-![图片颜色矩阵](https://upload-images.jianshu.io/upload_images/6641583-ea425a72a9d12211.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![图片颜色矩阵](./images/6641583-ea425a72a9d12211.webp)
 
 
 我们可以对该图片颜色矩阵进行变换，转换为我们熟悉的二维矩阵，RGB每个颜色是一个特征列，这个矩阵一共有4032*3024 行=12192768 行，也就是1219万个像素点、1219万个颜色点
@@ -33,7 +33,7 @@
 
 变换后结果如下图所示：
 
-![颜色矩阵转换](https://upload-images.jianshu.io/upload_images/6641583-1171e24efd1d7327.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![颜色矩阵转换](./images/6641583-1171e24efd1d7327.webp)
 
 转换为二维矩阵后，是不是和平时分析的数据样式就一样了，这样就可以用来进行聚类，特征列只有3个，分别为R、G、B
 
@@ -42,20 +42,20 @@
 
 利用SSE指标，结合肘部法则，可以确定聚为10类时，比较合适
 
-![确定类数](https://upload-images.jianshu.io/upload_images/6641583-2882a9f480e98ccd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![确定类数](./images/6641583-2882a9f480e98ccd.webp)
 
 然后用这10类的中心点坐标颜色来还原图片，相当于用10种颜色来对图片进行上色，可以看到图片基本与原图一直，除了天空有锯齿外，图片其他的地方完美显示，这时图片大小为 997KB
 
-![10类](https://upload-images.jianshu.io/upload_images/6641583-fec4b0e80a752675.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/320)
+![10类](./images/6641583-fec4b0e80a752675.webp)
 
 # 极端情况，聚类为2种颜色
 由于原图里面蓝色较多，聚为2类时，除了有蓝色，还有暗棕色
-![2类](https://upload-images.jianshu.io/upload_images/6641583-d1d178ac82eb3434.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/320)
+![2类](./images/6641583-d1d178ac82eb3434.webp)
 
 # 脑洞大开，用黑白色表示
 由于上面可以用2种颜色来表示，于是脑洞大开，可以用黑色与白色来试试，效果如下图所示，有点类似手绘风格的图片
 
-![黑白色](https://upload-images.jianshu.io/upload_images/6641583-ac6493c10b778a95.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/320)
+![黑白色](./images/6641583-ac6493c10b778a95.webp)
 
 # 完整代码
 ```python
@@ -117,9 +117,9 @@ io.imsave('黑白色.jpg',image_new_convert)
 ```
 
 # 历史相关文章
-- [利用Python 自己动手制作动漫效果图片](https://www.jianshu.com/p/359c8cbdda63)
-- [利用Python对图片进行马赛克处理](https://www.jianshu.com/p/f9d34f251112)
-- [利用Python生成手绘效果的图片](https://www.jianshu.com/p/40e353ec75bd)
+- [利用Python 自己动手制作动漫效果图片](./利用Python-自己动手制作动漫效果图片.md)
+- [利用Python对图片进行马赛克处理](./利用Python对图片进行马赛克处理.md)
+- [利用Python生成手绘效果的图片](./利用Python生成手绘效果的图片.md)
 
 **************************************************************************
 **以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号：DataShare ，不定期分享干货**

@@ -1,0 +1,7 @@
+# 使用教程
+https://www.wzhecnu.cn/2024/11/11/blog/mdbook/
+
+# 本地启动mdbook
+mdbook build  # 构建book 
+mdbook serve -p 6000  # 为了更便捷地预览文档，可以启动本地服务器进行交互式查看
+

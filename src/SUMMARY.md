@@ -15,6 +15,13 @@
 		- [Python利用partial偏函数，生成不同的聚合函数](Python基础库/Python利用partial偏函数，生成不同的聚合函数.md)
 		- [Python内置的-os-模块常用函数、方法](Python基础库/Python内置的-os-模块常用函数、方法.md)
 		- [Python文件打包成exe可执行程序](Python基础库/Python文件打包成exe可执行程序.md)
+        - [《Python-编程从新手到高手》知识点](Python基础库/《Python-编程从新手到高手》知识点.md)
+        - [Python-单实例模式详解](Python基础库/Python-单实例模式详解.md)
+        - [Python函数参数：列表作为默认值，一个隐藏的陷阱！](Python基础库/Python函数参数：列表作为默认值，一个隐藏的陷阱！.md)
+        - [Python-函数参数类型与使用规则详解](Python基础库/Python-函数参数类型与使用规则详解.md)
+        - [Rust-是否会重写-Python-解释器与有关的库，替代-C-语言地位？](Python基础库/Rust-是否会重写-Python-解释器与有关的库，替代-C-语言地位？.md)
+
+
 
 
 	- [Python数据处理]()
@@ -86,6 +93,10 @@
 		- [Matplotlib-自定义函数实现左边柱形图，右边饼图](数据可视化/Matplotlib-自定义函数实现左边柱形图，右边饼图.md)
 		- [Python-基于pyecharts自定义经纬度热力图可视化](数据可视化/Python-基于pyecharts自定义经纬度热力图可视化.md)
 		- [Python-利用Matplotlib制作初中时圆规画的图](数据可视化/Python-利用Matplotlib制作初中时圆规画的图.md)
+        - [Python-基于Matplotlib制作动态图](数据可视化/Python-基于Matplotlib制作动态图.md)
+        - [Python-基于plotly库快速画旭日图](数据可视化/Python-基于plotly库快速画旭日图.md)
+        - [Python-基于plotly库快速绘制时间线图](数据可视化/Python-基于plotly库快速绘制时间线图.md)
+
         
 	
 	
@@ -107,6 +118,8 @@
 	- [数据采集]()
 		- [Python-利用协程采集想看的《人世间》下载地址](数据采集/Python-利用协程采集想看的《人世间》下载地址.md)
 		- [Python-中一个好用的股票开源库akshare](数据采集/Python-中一个好用的股票开源库akshare.md)
+        - [Python-利用协程整合IPTV直播源](数据采集/Python-利用协程整合IPTV直播源.md)
+
 	
 	
 	
@@ -126,17 +139,24 @@
 		- [Python-除了结巴分词，还有什么好用的中文分词工具？](NLP/Python-除了结巴分词，还有什么好用的中文分词工具？.md)
 		- [Python调用apiKey试玩ChatGPT](NLP/Python调用apiKey试玩ChatGPT.md)
 		- [自然语言处理（NLP）-Bert与Lstm结合](NLP/自然语言处理（NLP）-Bert与Lstm结合.md)
-        - [基于DeepSeek，构建个人本地RAG知识库](NLP/基于DeepSeek，构建个人本地RAG知识库.md)
-
-		
-		
-	-[数学知识]()
+        - [基于DeepSeek，构建个人本地RAG知识库](NLP/基于DeepSeek，构建个人本地RAG知识库.md)    
+        
+    
+    
+	- [数学知识]()
 		- [分类问题中Sigmoid-与-Softmax-区别](数学知识/分类问题中Sigmoid-与-Softmax-区别.md)
 		- [利用Python枚举所有的排列情况](数学知识/利用Python枚举所有的排列情况.md)
 		- [让ChatGPT回答闰年的计算逻辑](数学知识/让ChatGPT回答闰年的计算逻辑.md)
 		- [Python-使用sklearn计算余弦相似度](数学知识/Python-使用sklearn计算余弦相似度.md)
 		- [Python利用枚举法，解决一道面试算法题](数学知识/Python利用枚举法，解决一道面试算法题.md)
 
+    - [Web]()
+        - [Python中一个构建-web-页面的神奇库-streamlit](Web/Python中一个构建-web-页面的神奇库-streamlit.md)
+    
+
+    
+    
+    
 ---
 
 - [Hive]()
@@ -182,6 +202,10 @@
 - [随笔]()
 	- [工欲善其事必先利其器](随笔/工欲善其事必先利其器.md)
 	- [吴军老师的《计算之魂》部分重点摘要](随笔/吴军老师的《计算之魂》部分重点摘要.md)
+    - [从互联网+，到DeepSeek+，新一轮的技术变革](随笔/从互联网+，到DeepSeek+，新一轮的技术变革.md)
+    - [管理的精髓](随笔/管理的精髓.md)
+
+
 
 
 

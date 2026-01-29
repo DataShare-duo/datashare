@@ -37,16 +37,18 @@ cosine_similarity(a1,a2)   #第一行的值是a1中的第一个行向量与a2中
 cosine_similarity(a1)   #a1中的行向量之间的两两余弦相似度
 ```
 
->cosine_similarity(X, Y=None, dense_output=True)
-X : ndarray or sparse array, shape: (n_samples_X, n_features)
-    Input data.---------------X是二维的矩阵
-Y : ndarray or sparse array, shape: (n_samples_Y, n_features)
-    Input data. If ``None``, the output will be the pairwise
-    similarities between all samples in ``X``.---------------Y也是二维的矩阵
+`cosine_similarity(X, Y=None, dense_output=True)`
 
-![sklearn余弦相似度](https://upload-images.jianshu.io/upload_images/6641583-6f38d392eb993e79.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+*   **X** : `ndarray` or `sparse array`, shape: `(n_samples_X, n_features)`
+    输入数据。X 是一个二维矩阵。
+*   **Y** : `ndarray` or `sparse array`, shape: `(n_samples_Y, n_features)`
+    输入数据。如果为 `None`，输出将是 `X` 中所有样本之间的两两相似度。Y 也是一个二维矩阵
+
+
+![sklearn余弦相似度](./images/6641583-6f38d392eb993e79.webp)
 # 历史相关文章
-- [Python Numpy中的范数](https://www.jianshu.com/p/343618e8e455)
-- [Python 如何确定K-Means聚类的簇数](https://www.jianshu.com/p/0e74342b9b0b)
+- [Python Numpy中的范数](../Python数据处理/Python--Numpy中的范数.md)
+- [Python 如何确定K-Means聚类的簇数](../数据分析与挖掘/Python-如何确定K-Means聚类的簇数.md)
+
 **************************************************************************
 **以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号DataShare，不定期分享干货**

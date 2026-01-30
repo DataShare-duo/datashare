@@ -2,7 +2,7 @@
 `pathlib` 标准库是在 Python3.4 引入，到现在最近版 3.11 已更新了好几个版本，主要是用于路径操作，相比之前的路径操作方法 `os.path` 有一些优势，有兴趣的同学可以学习下
 
 >**官方文档：** [https://docs.python.org/zh-cn/3/library/pathlib.html](https://docs.python.org/zh-cn/3/library/pathlib.html)
-![官方pathlib图片](./image/6641583-9e5a96f92df24f82.png)
+![官方pathlib图片](./images/6641583-9e5a96f92df24f82.png)
 
 # 小编环境
 ```python

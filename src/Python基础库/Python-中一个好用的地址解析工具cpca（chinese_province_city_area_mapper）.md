@@ -28,7 +28,7 @@ https://o7planning.org/11467/install-microsoft-visual-cpp-build-tools
 #### 常规用法
 会自动补全相应的省、市、区
 
-![常规用法](./image/6641583-c7be7d3c8c3e82d8.webp)
+![常规用法](./images/6641583-c7be7d3c8c3e82d8.webp)
 
 ```python
 import cpca
@@ -54,7 +54,7 @@ df.loc[0,"市"]
 #### 重名情况
 中国的区级行政单位非常的多，经常有重名的情况，比如“北京市朝阳区”和“吉林省长春市朝阳区”，当有上级地址信息的时候，cpca 能够根据上级地址 推断出这是哪个区，但是如果没有上级地址信息，单纯只有一个区名的时候， cpca 就没法推断了，只能随便选一个了， 通过 umap 参数你可以指定这种情况下该选择哪一个
 
-![重名情况](./image/6641583-e76c3f6056b4e95c.webp)
+![重名情况](./images/6641583-e76c3f6056b4e95c.webp)
 
 从例子可以看出，umap 字典的 key 是区名，value 是区的 adcode，这里 `110105` 就是北京市朝阳区的 adcode，具体的 adcode 可以去全国行政区划查询平台上查询
 

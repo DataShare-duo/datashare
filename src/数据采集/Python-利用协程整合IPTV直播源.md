@@ -50,8 +50,8 @@ python live_source.py
 
 
 # 历史相关文章
-- [Python 利用aiohttp异步流式下载文件](https://www.jianshu.com/p/22148c4a0b41)
-- [Python 利用协程采集想看的《人世间》下载地址](https://www.jianshu.com/p/0fadd9b67049)
+- [Python 利用aiohttp异步流式下载文件](../Python数据处理/Python-利用aiohttp异步流式下载文件.md)
+- [Python 利用协程采集想看的《人世间》下载地址](./Python-利用协程采集想看的《人世间》下载地址.md)
 
 **************************************************************************
 **以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号：DataShare ，不定期分享干货**

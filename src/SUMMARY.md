@@ -20,6 +20,16 @@
         - [Python函数参数：列表作为默认值，一个隐藏的陷阱！](Python基础库/Python函数参数：列表作为默认值，一个隐藏的陷阱！.md)
         - [Python-函数参数类型与使用规则详解](Python基础库/Python-函数参数类型与使用规则详解.md)
         - [Rust-是否会重写-Python-解释器与有关的库，替代-C-语言地位？](Python基础库/Rust-是否会重写-Python-解释器与有关的库，替代-C-语言地位？.md)
+        - [Python-3-14-无GIL解释器性能测试：释放多核CPU的并行潜力](Python基础库/Python-3-14-无GIL解释器性能测试：释放多核CPU的并行潜力.md)
+        - [Python-2个好用的装饰器函数](Python基础库/Python-2个好用的装饰器函数.md)
+        - [Python-collections详解：解锁高效数据结构](Python基础库/Python-collections详解：解锁高效数据结构.md)
+        - [Python-标准库之pathlib（二），路径操作](Python基础库/Python-标准库之pathlib（二），路径操作.md)
+        - [Python-基于协程的端口扫描工具](Python基础库/Python-基于协程的端口扫描工具.md)
+        - [Python-利用-uv-“一键”-快速部署服务](Python基础库/Python-利用-uv-“一键”-快速部署服务.md)
+        - [Python-迈向强类型化的优雅转变](Python基础库/Python-迈向强类型化的优雅转变.md)
+        - [Python-项目管理新思路：用-uv-Workspace-共享虚拟环境，省时省空间！](Python基础库/Python-项目管理新思路：用-uv-Workspace-共享虚拟环境，省时省空间！.md)
+        - [Python-新晋包项目工具uv的简单尝试](Python基础库/Python-新晋包项目工具uv的简单尝试.md)
+        - [Python-在指定文件夹安装三方库，并进行加载使用](Python基础库/Python-在指定文件夹安装三方库，并进行加载使用.md)
 
 
 
@@ -112,6 +122,7 @@
         - [Python-微信头像添加国旗](Python图像处理/Python-微信头像添加国旗.md)
         - [Python-一个在本地给图片添加水印的小工具](Python图像处理/Python-一个在本地给图片添加水印的小工具.md)
         - [利用Python生成手绘效果的图片](Python图像处理/利用Python生成手绘效果的图片.md)
+        - [利用Python实现二维码自由](Python图像处理/利用Python实现二维码自由.md)
 
 
 
@@ -139,7 +150,7 @@
 		- [Python-除了结巴分词，还有什么好用的中文分词工具？](NLP/Python-除了结巴分词，还有什么好用的中文分词工具？.md)
 		- [Python调用apiKey试玩ChatGPT](NLP/Python调用apiKey试玩ChatGPT.md)
 		- [自然语言处理（NLP）-Bert与Lstm结合](NLP/自然语言处理（NLP）-Bert与Lstm结合.md)
-        - [基于DeepSeek，构建个人本地RAG知识库](NLP/基于DeepSeek，构建个人本地RAG知识库.md)    
+        
         
     
     
@@ -195,6 +206,13 @@
 - [EXCEL数据处理-VBA]()
 	- [Excel中的标准差stdev-S和stdev-P区别](EXCEL数据处理-VBA/Excel中的标准差stdev-S和stdev-P区别.md)
 	- [数据去重-----VBA字典法](EXCEL数据处理-VBA/数据去重-----VBA字典法.md)
+
+
+---
+
+- [大模型相关]()
+    - [尝试-gemini-cli，在本地开发俄罗斯方块](大模型相关/尝试-gemini-cli，在本地开发俄罗斯方块.md)
+    - [基于DeepSeek，构建个人本地RAG知识库](大模型相关/基于DeepSeek，构建个人本地RAG知识库.md)    
 
 
 ---

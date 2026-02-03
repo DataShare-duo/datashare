@@ -87,9 +87,9 @@ if not path.exists():
 
 
 # 历史相关文章
-- [Python 标准库之pathlib，路径操作](https://www.jianshu.com/p/9df296b7b0c5)
-- [Python collections详解：解锁高效数据结构](https://www.jianshu.com/p/a9c0ec7d2e23)
-- [Python利用partial偏函数，生成不同的聚合函数](https://www.jianshu.com/p/a1d6a0514ead)
+- [Python-标准库之pathlib，路径操作](/Python基础库/Python-标准库之pathlib，路径操作.md)
+- [Python-collections详解：解锁高效数据结构](/Python基础库/Python-collections详解：解锁高效数据结构.md)
+- [Python利用partial偏函数，生成不同的聚合函数](/Python基础库/Python利用partial偏函数，生成不同的聚合函数.md)
 
 **************************************************************************
 **以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号：DataShare ，不定期分享干货**

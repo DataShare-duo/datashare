@@ -78,9 +78,9 @@ super(Singleton, cls).__new__(cls) → 实际调用object.__new__(Singleton)
 4. 缓存系统：全局缓存需要统一管理，避免多个缓存实例导致数据不一致
 
 # 历史相关文章
-- [Python collections详解：解锁高效数据结构](https://www.jianshu.com/p/a9c0ec7d2e23)
-- [Python函数参数：列表作为默认值，一个隐藏的陷阱！](https://www.jianshu.com/p/4cb17842a6b0)
-- [Python 2个好用的装饰器函数](https://www.jianshu.com/p/9f7cfcfee97c)
+- [Python-collections详解：解锁高效数据结构](/Python基础库/Python-collections详解：解锁高效数据结构.md)
+- [Python-函数参数类型与使用规则详解](/Python基础库/Python-函数参数类型与使用规则详解.md)
+- [Python-2个好用的装饰器函数](/Python基础库/Python-2个好用的装饰器函数.md)
 
 **************************************************************************
 **以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号：DataShare ，不定期分享干货**

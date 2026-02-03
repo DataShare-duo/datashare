@@ -24,9 +24,9 @@ print(pyspark.__version__)
 ```
 
 # 历史相关文章
-- [Python中的Lambda匿名函数](https://www.jianshu.com/p/e17c433c07ca)
-- [Python 常用的加解密算法实例应用](https://www.jianshu.com/p/19b684b335aa)
-- [Python 字符串格式化方法总结](https://www.jianshu.com/p/b80b56cb09a4)
+- [Python中的Lambda匿名函数](/Python数据处理/Python中的Lambda匿名函数.md)
+- [Python-常用的加解密算法实例应用](/Python数据处理/Python-常用的加解密算法实例应用.md)
+- [Python-字符串格式化方法总结](/Python数据处理/Python-字符串格式化方法总结.md)
 
 **************************************************************************
 **以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号：DataShare ，不定期分享干货**

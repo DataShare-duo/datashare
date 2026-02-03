@@ -77,9 +77,9 @@ uv python dir
 ```
 
 # 历史相关文章
-- [Python中一个构建 web 页面的神奇库 streamlit](https://www.jianshu.com/p/51a0cabfd058)
-- [Python 基于pyhive库操作hive](https://www.jianshu.com/p/29e100041089)
-- [Python 基于plotly库快速画旭日图](https://www.jianshu.com/p/ce51d6a98c9c)
+- [Python中一个构建-web-页面的神奇库-streamlit](/Web/Python中一个构建-web-页面的神奇库-streamlit.md)
+- [Python-基于pyhive库操作hive](/Python数据处理/Python-基于pyhive库操作hive.md)
+- [Python-基于plotly库快速画旭日图](/数据可视化/Python-基于plotly库快速画旭日图.md)
 
 **************************************************************************
 **以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号：DataShare ，不定期分享干货**

@@ -48,9 +48,10 @@ def inform(cls, codeword):
 **重点是记住这2个英文单词，比如在hive sql中，任务在集群中运行，可以启动并行，`set hive.exec.parallel=true;`，中文翻译有时会忽略两者差异**
 
 # 历史相关文章
-- [Python 函数参数类型与使用规则详解](https://www.jianshu.com/p/32490fab9cef)
-- [Python 3.14 无GIL解释器性能测试：释放多核CPU的并行潜力](https://www.jianshu.com/p/5d86ebb32ae2)
-- [Python 标准库之pathlib（二），路径操作](https://www.jianshu.com/p/b72b946a5c82)
+- [Python-函数参数类型与使用规则详解](/Python基础库/Python-函数参数类型与使用规则详解.md)
+- [Python-3-14-无GIL解释器性能测试：释放多核CPU的并行潜力](/Python基础库/Python-3-14-无GIL解释器性能测试：释放多核CPU的并行潜力.md)
+- [Python-标准库之pathlib（二），路径操作](/Python基础库/Python-标准库之pathlib（二），路径操作.md)
+
 
 **************************************************************************
 **以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号：DataShare ，不定期分享干货**

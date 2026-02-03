@@ -77,6 +77,11 @@
 		- [Pythonner还在为了练习Numpy而没有真实数据而烦恼吗？](Python数据处理/Pythonner还在为了练习Numpy而没有真实数据而烦恼吗？.md)
 		- [Python 利用矢量化，计算2个经纬度之间的距离](Python数据处理/Python-利用矢量化，计算2个经纬度之间的距离.md)
 		- [Python pandas中重排列与列重名](Python数据处理/Python-pandas中重排列与列重名.md)
+        - [Python-Pandas导出Excel时保留URL为纯文本的完美方案](Python数据处理/Python-Pandas导出Excel时保留URL为纯文本的完美方案.md)
+        - [Python-基于hdfs路径统计hive表存储信息](Python数据处理/Python-基于hdfs路径统计hive表存储信息.md)
+        - [Python-基于OpenList接口下载夸克网盘资源](Python数据处理/Python-基于OpenList接口下载夸克网盘资源.md)
+        - [Python-基于pyhive库操作hive](Python数据处理/Python-基于pyhive库操作hive.md)
+
 		
         
         

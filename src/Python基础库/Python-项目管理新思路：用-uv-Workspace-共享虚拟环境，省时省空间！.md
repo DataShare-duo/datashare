@@ -151,9 +151,9 @@ uv run .\main.py
 ```
 
 # 历史相关文章
-- [Python 新晋包项目工具uv的简单尝试](https://www.jianshu.com/p/b6b8f810bf4f)
-- [Python 在指定文件夹安装三方库，并进行加载使用](https://www.jianshu.com/p/64b89fe8ba9f)
-- [Rust 是否会重写 Python 解释器与有关的库，替代 C 语言地位？](https://www.jianshu.com/p/f3a609479cf7)
+- [Python-新晋包项目工具uv的简单尝试](/Python基础库/Python-新晋包项目工具uv的简单尝试.md)
+- [Python-在指定文件夹安装三方库，并进行加载使用](/Python基础库/Python-在指定文件夹安装三方库，并进行加载使用.md)
+- [Rust-是否会重写-Python-解释器与有关的库，替代-C-语言地位？](/Python基础库/Rust-是否会重写-Python-解释器与有关的库，替代-C-语言地位？.md)
 
 **************************************************************************
 **以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号：DataShare ，不定期分享干货**

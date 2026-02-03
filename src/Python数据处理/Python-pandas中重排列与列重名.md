@@ -62,11 +62,11 @@ data_rename2 = data.rename(columns=fn_columns_mapper)
 ![rename方法2](./images/6641583-7968f7a3266a5b65.png)
 
 # 历史相关文章
-- [Python pandas遍历行数据的2种方法](https://www.jianshu.com/p/9b4596949f62)
-- [Python 利用pandas对数据进行特定排序](https://www.jianshu.com/p/8cee0d657696)
-- [Python pandas 2.0 初探](https://www.jianshu.com/p/32cf63c30f8b)
-- [Python pandas.str.replace 不起作用](https://www.jianshu.com/p/b8e9ddee3b04)
-- [Python数据处理中 pd.concat 与 pd.merge 区别](https://www.jianshu.com/p/e646d91e83b0)
+- [Python-pandas遍历行数据的2种方法](/Python数据处理/Python-pandas遍历行数据的2种方法.md)
+- [Python-利用pandas对数据进行特定排序](/Python数据处理/Python-利用pandas对数据进行特定排序.md)
+- [Python-pandas-2-0-初探](/Python数据处理/Python-pandas-2-0-初探.md)
+- [Python-pandas-str-replace-不起作用](/Python数据处理/Python-pandas-str-replace-不起作用.md)
+- [Python数据处理中-pd-concat-与-pd-merge-区别](/Python数据处理/Python数据处理中-pd-concat-与-pd-merge-区别.md)
 
 **************************************************************************
 **以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号：DataShare ，不定期分享干货**

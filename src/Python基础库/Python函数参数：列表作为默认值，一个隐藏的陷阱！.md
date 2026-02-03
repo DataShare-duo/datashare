@@ -49,9 +49,10 @@ def add_item(item, items=None):
     return items
 ```
 # 历史相关文章
-- [Python 2个好用的装饰器函数](https://www.jianshu.com/p/9f7cfcfee97c)
-- [Python 迈向强类型化的优雅转变](https://www.jianshu.com/p/9bda953d1445)
-- [Python 字典已经是有序的，你知道吗？](https://www.jianshu.com/p/b6c1f0bf7db6)
+- [Python-2个好用的装饰器函数](/Python基础库/Python-2个好用的装饰器函数.md)
+- [Python-迈向强类型化的优雅转变](/Python基础库/Python-迈向强类型化的优雅转变.md)
+- [Python-字典已经是有序的，你知道吗？](/Python基础库/Python-字典已经是有序的，你知道吗？.md)
+
 
 **************************************************************************
 **以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号：DataShare ，不定期分享干货**

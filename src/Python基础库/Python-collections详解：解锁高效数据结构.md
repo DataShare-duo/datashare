@@ -112,9 +112,10 @@ od.popitem(last=False)  # FIFO删除，删除 ('a', 2)
 
 
 # 历史相关文章
-- [Python 字典已经是有序的，你知道吗？](https://www.jianshu.com/p/b6c1f0bf7db6)
-- [Python利用partial偏函数，生成不同的聚合函数](https://www.jianshu.com/p/a1d6a0514ead)
-- [Python中的Lambda匿名函数](https://www.jianshu.com/p/e17c433c07ca)
+- [Python-字典已经是有序的，你知道吗？](/Python基础库/Python-字典已经是有序的，你知道吗？.md)
+- [Python中的Lambda匿名函数](/Python数据处理/Python中的Lambda匿名函数.md)
+- [Python利用partial偏函数，生成不同的聚合函数](/Python基础库/Python利用partial偏函数，生成不同的聚合函数.md)
+
 
 **************************************************************************
 **以上是自己实践中遇到的一些问题，分享出来供大家参考学习，欢迎关注微信公众号：DataShare ，不定期分享干货**

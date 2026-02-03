@@ -12,7 +12,7 @@
 
 参考：<br/>
 [https://blog.csdn.net/Gary1_Liu/article/details/81297927](https://blog.csdn.net/Gary1_Liu/article/details/81297927)
-[https://www.jianshu.com/p/1888984cad82](https://www.jianshu.com/p/1888984cad82)
+
 
 # Anaconda环境管理
 - 克隆环境

@@ -30,6 +30,8 @@
         - [Python-项目管理新思路：用-uv-Workspace-共享虚拟环境，省时省空间！](Python基础库/Python-项目管理新思路：用-uv-Workspace-共享虚拟环境，省时省空间！.md)
         - [Python-新晋包项目工具uv的简单尝试](Python基础库/Python-新晋包项目工具uv的简单尝试.md)
         - [Python-在指定文件夹安装三方库，并进行加载使用](Python基础库/Python-在指定文件夹安装三方库，并进行加载使用.md)
+        - [Python-装饰器的灵活实现：带参数与不带参数](Python基础库/20260204-Python-装饰器的灵活实现：带参数与不带参数.md)
+
 
 
 

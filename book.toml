@@ -11,7 +11,7 @@ description = "一枚热爱技术的数据分析师，同时也热爱分享技�
 additional-css = ["blog.css"]
 mathjax-support = true
 additional-js = ["assets/fzf.umd.js", "assets/elasticlunr.js"]
-
+git-repository-url = "https://github.com/DataShare-duo/datashare"
 
 [output.html.fold]
 enable = true    # whether or not to enable section folding

@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 小编之前写过一篇介绍 `pathlib` 标准库的文章，最近在做项目时，又发现其有一个更好用的功能，分享给大家，供大家参考学习
 

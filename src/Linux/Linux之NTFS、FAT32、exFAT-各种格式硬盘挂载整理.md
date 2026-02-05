@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 由于业务需要频繁处理大量视频（几十GB），通过公司内网传输太慢，于是就每次处理视频时需要在服务器挂载硬盘或U盘。业务人员给的硬盘或U盘格式有时不一样，目前遇到的格式：NTFS、FAT32、exFAT，这几种格式大家在Windows上基本很常见，于是总结了这些格式的硬盘如何有效挂载到Linux服务器，分享出来供大家参考
 - NTFS挂载

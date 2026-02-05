@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # value_counts介绍
 value_counts是一种查看表格某列中有多少个不同值的快捷方法，并计算每个不同值有在该列中个数，类似Excel里面的count函数
 

@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 介绍
 bisect模块提供了一种只针对 **已排序的序列** 的方法，快速找到插入元素的位置，这个模块使用二分查找算法，算法的时间复杂度相对更低一些，可以用于程序优化提升性能
 

@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 最近在看《Python - 100天从新手到大师》时，运行了一下代码，感觉挺有意思。一个简单的小游戏，包含了pyhon的很多知识，分享出来，供大家参考学习
 

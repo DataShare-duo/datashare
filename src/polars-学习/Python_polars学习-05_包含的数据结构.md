@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 polars学习系列文章，第5篇 包含的数据结构，与 `pandas` 一样，`polars` 包含的数据结构是：`Series`、`DataFrame`，大部分操作与`pandas` 保持一致，减少了大家的学习难度
 

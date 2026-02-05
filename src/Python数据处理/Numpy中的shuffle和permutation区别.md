@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 主要区别
 - `shuffle`没有返回值，直接在原来的数据上进行打乱排序，没有返回；而`permutation`是在数据副本上面进行打乱，返回打乱之后的副本。
 - 由于permutation会复制数据，所以当数据量特别大的时候，使用shuffle的效率更高。

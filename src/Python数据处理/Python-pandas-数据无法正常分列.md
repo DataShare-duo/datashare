@@ -1,3 +1,8 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
+
 在数据处理时，有时需要对数据进行分列，类似于Excel里面的分列功能，这个在pandas里面也可以实现，下面就来详细介绍相关的方法及注意点，前提是你已经对pandas有一定的了解
 
 # 导入数据

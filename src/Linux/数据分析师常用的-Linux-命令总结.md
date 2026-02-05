@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 也许你有这样的疑问，数据分析师为什么要了解Linux？这不是开发人员应该了解的吗？把Windows+SQL+Excel+Python玩的精通，不香吗？
 

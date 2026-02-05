@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 去年春节过后，ChatGPT成为了科技领域的热议话题，而今年过完年后，DeepSeek同样火爆异常，引发了广泛的讨论。随着大量文章的涌现，DeepSeek的功能和潜力成为了焦点。在这一波技术革新的浪潮中，这里小编也评论一下哪些行业和职业将会受到影响？
 
 **DeepSeek类工具：集各种技能于一身的“专家”**

@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 在网上搜集到的多线程资料都是一些概念介绍，而没有真实的案例告诉读者怎么真实来使用，下面就一个真实的使用场景来介绍多线程。
 

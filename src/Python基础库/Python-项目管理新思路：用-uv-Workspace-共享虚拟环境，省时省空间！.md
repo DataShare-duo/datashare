@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 上手 **`uv`** 一段时间后，真心觉得这款工具让 Python 项目管理变得省心不少！它不仅操作便捷，安装第三方包的速度更是快得飞起。
 

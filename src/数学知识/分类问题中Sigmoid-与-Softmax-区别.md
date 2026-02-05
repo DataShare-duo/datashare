@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 利用神经网络进行分类任务时，在最后需要经过激活函数，对神经网络的原始输出值进行处理，输出每个类别的概率。本文将讨论用**Sigmoid函数**或**Softmax函数**处理原始输出值，进行分类问题。
 # Sigmoid函数

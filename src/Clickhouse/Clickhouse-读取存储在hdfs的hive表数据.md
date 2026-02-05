@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 离线数据经过 hive 处理后，生成的新数据，有时需要对接至研发侧 clikehouse，供前端用户查询使用，所以会涉及到hive数据同步至clikehouse，因为hive数据底层是存储在 hdfs ，因此只要知道hive的建表语句（元数据），再结合 clikehouse 中的特定表引擎（本质是表映射），即可实现 clikehouse 直接读取hdfs数据
 

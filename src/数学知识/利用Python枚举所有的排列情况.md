@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 概念
 >排列组合是组合学最基本的概念。
 排列（Permutation），就是指从给定个数的元素中取出指定个数的元素**进行排序**。

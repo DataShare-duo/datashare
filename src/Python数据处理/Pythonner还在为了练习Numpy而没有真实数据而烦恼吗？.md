@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 前言
 Python里面在数据处理、数据分析、数据可视化、数据挖掘等领域，用到的库有Numpy、Pandas、Matplotlib、Sklearn、Scipy等，这些库都是建立在Numpy基础之上，因此学习Numpy是每个Pythoner进入数据科学领取的必经之路。
 

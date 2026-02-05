@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 闰年计算在平时很常见，不管是面试还是业务数据处理，基本都会涉及到闰年的计算逻辑，那么就来问一下ChatGPT（基于 `4o` 模型回答），让他来帮我们详细解释一下闰年的计算逻辑
 

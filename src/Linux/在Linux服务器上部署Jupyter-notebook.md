@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 小编在刚开始学习Python时，是在Python官网下载的原生版本，用的是自带的编码环境，后来了解到在数据分析、数据科学领域用Jupyter notebook比较好，于是直到现在也是一直在用Jupyter notebook，也偶尔用PyCharm做开发。在数据分析与处理中Jupyter notebook还是很方便，可以直接查看数据，可以写文档，可以画图 等很多优点，感觉Jupyter notebook 就是是为了数据分析、数据挖掘、机器学习而生的
 

@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景介绍
 自然语言处理（NLP）在深度学习领域是一大分支（其他：CV、语音），经过这些年的发展NLP发展已经很成熟，同时在工业界也慢慢开始普及，谷歌开放的Bert是NLP前进的又一里程碑。本篇文章结合Bert与Lstm，对文本数据进行二分类的研究。
 # 需要的第三方库

@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 小编最近在处理hive表存储大小时，需要对每个表的大小进行排序，因通过 `hadoop fs -du -s -h /path/table` 命令获取的数据表大小，其结果是展示为人能直观理解的大小，例如 1.1T、1.9G、49.6M 等，如果想对这些表根据存储大小进行降序排列，利用pandas应该如何做呢？
 ![表大小](./images/6641583-43135fb43855ff71.png)

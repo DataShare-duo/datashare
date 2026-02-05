@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 在进行数据建模时（有时也叫训练模型），我们需要先经过数据清洗、特征选择与特征构造等预处理步骤，然后构造一个模型进行训练，其中One-Hot编码属于数据清洗步骤里面。
 

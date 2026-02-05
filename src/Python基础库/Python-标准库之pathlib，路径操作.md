@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 `pathlib` 标准库是在 Python3.4 引入，到现在最近版 3.11 已更新了好几个版本，主要是用于路径操作，相比之前的路径操作方法 `os.path` 有一些优势，有兴趣的同学可以学习下
 

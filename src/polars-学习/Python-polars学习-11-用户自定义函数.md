@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 polars学习系列文章，第11篇 用户自定义函数，python 自定义函数如何与 polars 结合使用
 

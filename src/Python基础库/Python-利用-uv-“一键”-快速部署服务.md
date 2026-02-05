@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 随着Python在Web开发、数据科学等领域的广泛应用，项目依赖管理与环境部署的效率直接影响着开发体验。传统的Python项目往往需要结合 virtualenv、pip 乃至 pipenv/poetry 等多种工具进行环境隔离、依赖安装与版本管理，步骤繁琐且容易因环境不一致导致运行问题
 

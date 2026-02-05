@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 需要把txt文件数据导入mysql数据库，中间需要经过一些数据处理，在经过相关查找后，pandas自带的`to_sql()`，可以实现把`DataFrame`直接导入数据库。
 

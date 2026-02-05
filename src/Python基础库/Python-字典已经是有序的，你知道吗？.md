@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 随着Python版本的更新，背后的一些数据结构会进行不断优化迭代，重新进行架构设计，以实现内存减少、性能提升。其中字典的底层数据结构在Python3.6版本时，重新进行了设计，从而优化了字典的内存占用 
 

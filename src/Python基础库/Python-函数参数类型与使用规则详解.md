@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 Python以其灵活性著称，这种特性在函数参数设计中尤为明显。本文将依据语言规范，系统阐述Python函数所支持的全部参数类型及其应用
 

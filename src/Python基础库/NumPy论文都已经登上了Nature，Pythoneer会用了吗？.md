@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 NumPy（Numerical Python）诞生已经过去了 15 年，前一段时间NumPy 核心开发团队的论文终于发表，详细介绍了使用 NumPy 的数组编程（Array programming），并且登上了Nature 。
 

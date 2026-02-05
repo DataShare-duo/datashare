@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 虽然  Python 中已提供了 **列表**、**字典** 等非常灵活的数据结构，但是**`collections`** 模块提供了高性能的容器数据类型，能大幅优化代码效率和可读性，本文将深入解析该模块中的六大核心工具，助你写出更优雅的Python代码，避免你重复造轮子
 

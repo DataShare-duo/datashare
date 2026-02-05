@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 在平时业务运营分析中经常会提取数据，也就是大家俗称的Sql Boy，表哥表姐，各大公司数据中台现在大部分用的都是基于Hadoop的分布式系统基础架构，用的比较多的有Hive数据仓库工具，数据分析师在数据查询时用的就是HQL，语法与Mysql有所不同，基本每天都会写大量的HQL语句，但你有试过哪些风格的写法呢？哪种风格的查询语句更容易理解呢？可能不同的人有不同的看法，下面展示具体的风格代码样式，看看你喜欢哪种
 >Hadoop是一个由Apache基金会所开发的分布式系统基础架构。用户可以在不了解分布式底层细节的情况下，开发分布式程序。充分利用集群的威力进行高速运算和存储。Hadoop实现了一个分布式文件系统（ Distributed File System），其中一个组件是HDFS（Hadoop Distributed File System）

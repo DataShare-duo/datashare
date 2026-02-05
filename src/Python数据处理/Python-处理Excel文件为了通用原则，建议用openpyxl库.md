@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 在给业务生成自动化Excel报表时，需要把数据库里面的数据进行处理，然后放到Excel里面并进行美化，用邮件进行发送，满足业务的需求。但是这些自动化程序一般都是部署在Linux服务器上定期进行发送邮件，这样就需要在Linux环境下生成Excel文件，之前有文章介绍过 **xlwings库**，但是该库不支持Linux，经过查找相关的资料后，**openpyxl库** 可以满足要求。
 

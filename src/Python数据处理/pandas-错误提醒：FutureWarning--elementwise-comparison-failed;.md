@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 在数据处理时，对原始数据进行筛选操作，在不注意情况下，会引发`FutureWarning: elementwise comparison failed; returning scalar instead, but in the future will perform elementwise comparison` 警告，究其根本原因就是在进行筛选时，对不同类型进行了比较，导致返回错误的结果
 

@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 - **确定文件编码** <br/>
 当不知道别人给的txt文件不知道是什么编码时，可以通过chardet模块来判断是属于什么编码
 *chardet模块是第三方模块，需要手动安装*

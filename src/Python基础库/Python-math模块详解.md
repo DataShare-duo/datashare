@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 概述
 
 math模块是内置模块，提供了许多对浮点数的数学运算函数，提供类似C语言标准定义的数学函数（This module provides access to the mathematical functions defined by the C standard）

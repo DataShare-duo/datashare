@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 经过移动互联网的蓬勃发展后，促使数字化也进入大众视野，现阶段各个行业能数字化的基本都数字化，至于数字化后好用不好用是另一回事了
 

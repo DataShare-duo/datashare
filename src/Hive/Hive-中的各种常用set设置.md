@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 平时在跑数据时，需要在查询语句前设置一些set语句，这些set语句中其中有一些是配置hive的各功能，另一些是可以达到优化的目的，本篇文章对一些常用的set语句进行总结
 

@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 在对视频进行人脸打码时，需要从磁盘读取视频帧，然后通过训练好的深度神经网络模型进行人脸监测，获取到人脸的位置后，然后进行打码。
 

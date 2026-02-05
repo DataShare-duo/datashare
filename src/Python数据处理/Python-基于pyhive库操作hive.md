@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 在大数据处理时，基本都是基于Hadoop集群进行操作，数据相关人员在开发数仓或做临时业务需求时，基本都是利用 hive，写 sql 进行数据处理与统计分析，但是 sql 在处理一些复杂业务逻辑时会比较复杂，本文通过基于 pyhive 操作 hive，把 sql 的查询结果转为 pandas 中的 DataFrame 数据框，用于后续数据分析
 

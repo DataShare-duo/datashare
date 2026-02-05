@@ -1,3 +1,8 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
+
 # 背景
 现阶段各个公司的数据慢慢的增多，很多数据都是存放在基于Hadoop的集群上，数据的查询一般使用的是hive，很多公司的数据中台也是使用hive来进行数据处理，本篇文章就来分享下在hive中常用的函数
 

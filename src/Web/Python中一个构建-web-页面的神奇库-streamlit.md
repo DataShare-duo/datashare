@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 在上一篇文章《基于DeepSeek，构建个人本地RAG知识库》中用到了 `streamlit` 库，于是小编初步深入了解了一下，感觉很好用，是数据人的一个好帮手，避免学习前端知识，利用该库直接在 Python 中编码代码，然后启动服务后，在浏览器中可以直接查看 web 页面，省略了后端、前端构建 web 的繁琐过程，数据人可以直接把自己的数据以 web 形式展示出来
 

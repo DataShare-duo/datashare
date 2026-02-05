@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 最近在进行财务平台报告自动化建设，由于涉及的都是Excel文件，并且文件里面有很多合并单元格情况，所以在处理数据时用pandas不是很方便，综合考虑后利用VBA来处理。
 

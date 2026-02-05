@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 介绍
 偏函数(`functools.partial`)，主要用来解决函数中某些参数是已知的固定值。利用偏函数的概念，可以生成一些新的函数，在调用这些新函数时，不用再传递固定值的参数，这样可以使代码更简洁
 

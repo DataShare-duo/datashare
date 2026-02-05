@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 二维码，早已融入我们的日常！扫一扫加好友、支付买单、参加活动……处处可见它的身影。
 

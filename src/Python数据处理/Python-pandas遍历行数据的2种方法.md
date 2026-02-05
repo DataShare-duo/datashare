@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 pandas在数据处理过程中，除了对整列字段进行处理之外，有时还需求对每一行进行遍历，来处理每行的数据。本篇文章介绍 2 种方法，来遍历pandas 的行数据
 

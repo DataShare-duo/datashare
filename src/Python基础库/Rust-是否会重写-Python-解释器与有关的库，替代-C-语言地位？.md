@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 近2年随着Rust语言的大力发展，一些系统与软件开始逐渐使用Rust语言来实现，并且一些大型公司也开始逐渐转向Rust
 

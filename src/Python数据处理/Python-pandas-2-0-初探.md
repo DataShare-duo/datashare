@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 每门编程语言都有其独特的用途，目前python在数据科学方面发展的相对比较全面，大家目前也都喜欢使用python来处理数据、做模型开发等。python在数据处理方面离不开 `pandas` 库，该库在今年的4月3日发布了 2.0版更新，对底层进行了大量的重构以优化性能和稳定性
 

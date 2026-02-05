@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 有时写的Python程序需要交给业务人员使用，但业务人员电脑上基本都没有安装Python，并且业务人员也不会使用命令行，所以就需要把Python程序打包成exe可执行程序，让业务人员无需安装Python，可以直接使用。
 

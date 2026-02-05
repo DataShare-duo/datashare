@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 手绘效果
 
 ![手绘效果](./images/6641583-7f837ceb988b0825.webp)

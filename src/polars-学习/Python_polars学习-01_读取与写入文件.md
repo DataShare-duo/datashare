@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 在Python数据处理与分析中，大家在处理数据时，使用的基本都是 `Pandas` ，该库非常好用。随着 Rust 的出圈，基于其开发的 `Polars` 库，逐渐赢得大家的喜爱，在某些功能上更优于 `Pandas`。于是小编在自学的过程中，逐步整理一些资料供大家参考学习，这些资料会分享到github
 

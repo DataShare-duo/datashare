@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 最近项目需要用人脸检测技术把视频里面的人脸检测出来后，进行马赛克处理，人脸检测这一块就是大家熟知的利用深度学习技术来解决
 

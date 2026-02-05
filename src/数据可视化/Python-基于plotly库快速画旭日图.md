@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 本文借助 **plotly** 库来画旭日图，该库是一个高级可视化库，相对 Matplotlib 更高级一些，上手起来相对比较容易
 

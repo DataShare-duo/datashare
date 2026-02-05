@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 标准差这个指标在平时使用比较多，主要是用来计算数据的离散程度，在Excel中有相关的函数，可以直接来计算，其他的编程语言里面也有相关的函数。
 

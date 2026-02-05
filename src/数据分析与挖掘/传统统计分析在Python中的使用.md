@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 大家都知道现在大数据非常火爆，在大数据还没有出现时，用的都是“小数据”，这些“小数据”在分析时大部分用的都是Excel、SPSS等工具，直到现在把Excel运用的很熟练的人，仍然很受青睐。但是Python的到来，使处理大数据比较方便。那么之前在Excel、SPSS中的描述统计、假设检验在Python中怎么使用呢？下面将进行详细介绍，**前提是已经掌握numpy、pandas这两个库，并且对统计知识有所了解**
 

@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 数据分列在数据处理中很常见，数据分列一般指的都是字符串分割，这个功能在Excel里面很实用，处理数据非常方便，那么在pandas数据框中怎么使用呢，今天这篇文章就来详细介绍下
 ![分列](./images/6641583-51cfe68e74cd4ab3.webp)

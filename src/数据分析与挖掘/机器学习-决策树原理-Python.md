@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 
 **由于最近项目的需要，学习了分类算法--决策树，从逐步了解决策树，然后到手动在Excel里面模拟计算相关算法，最后到对scikit-learn库的运用，算是从理论到实践走了一遍，也发现scikit-learn库并不是完全对理论的实现，只是将部分算法实现出来，现总结分享出来供大家参考。**

@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 **OpenList**  ------ **“网盘聚合器”**
 近日，一个名为OpenList的开源网盘聚合神器，正成为越来越多网盘管理爱好者的新选择。它源于曾经广受欢迎的Alist项目，却在该项目走向商业化后，OpenList项目应运更生，由社区自发“接棒”继续前行

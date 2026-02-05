@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 前言
 无论是在自己Windows、MacOS电脑，还是在Linux服务器，在操作文件时，多多少少都会涉及到文件的管理。
 Python里面有个自带的 **`os`** 模块，专门是用来对文件、路径等进行管理的工具，下面列出一些自己在工作中常用的函数、方法，供大家参考学习。

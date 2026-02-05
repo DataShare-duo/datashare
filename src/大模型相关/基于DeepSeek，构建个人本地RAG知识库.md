@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 经过一段使用DeepSeek后，感觉使用体验和ChatGPT基本差不多，问答问题的质量略有提升，因DeepSeek已开源，它的模型、模型权重参数从网上都可以下载到，所以可以基于开源的模型，在本地构建一个自己的知识库，小编这里使用的是蒸馏后的模型权重 `deepseek-r1:1.5b` 
 

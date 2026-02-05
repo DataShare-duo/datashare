@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 最近在做数据处理时，发现别人给的 csv 文件用 txt 打开后，发现里面的所有字段都是带双引号，与自己之前见过的 csv 文件有点不一样，自己脑海里面隐约也见过 python 有相关的设置参数，于是就查看 python 官方文档中的 csv 模块介绍，总结分享出来予以记录，方便后续查看
 

@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 习惯了Excel里面的透视表拖拽方式，在Python中的pandas怎么能方便使用透视函数呢，有时可能会感到困惑，但是Excel中的透视表功能，pandas基本都能实现，下面进行详细介绍：
 # 生成透视表函数
 **pd.pivot_table(data,values=None,index=None,columns=None,aggfunc='mean',fill_value=None,margins=False,dropna=True,margins_name='All')** <br/>

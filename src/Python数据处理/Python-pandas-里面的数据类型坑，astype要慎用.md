@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 最近在项目处理数据时，对pandas里面的数据类型进行转换时（astype），产生了一些意外的情况，经过研究，对数据框里面的数据类型，又有了新的认识，分享出来供大家参考学习。
 

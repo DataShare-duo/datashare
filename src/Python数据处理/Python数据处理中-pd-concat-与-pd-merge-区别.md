@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 数据的合并与关联是数据处理过程中经常遇到的问题，在SQL、HQL中大家可能都有用到 join、uion all 等 ，在 Pandas 中也有同样的功能，来满足数据处理需求，个人感觉Pandas 处理数据还是非常方便，数据处理效率比较高，能满足不同的业务需求
 

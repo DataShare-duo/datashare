@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 最近看到其他公众号发的一篇文章《三个印度人改变压缩算法，一意孤行整个暑假，却因“太简单”申不到经费》，DCT是最原始的图像压缩算法
 

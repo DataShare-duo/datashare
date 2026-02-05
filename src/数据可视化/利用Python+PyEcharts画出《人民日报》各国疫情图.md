@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 # 背景
 由于昨天利用基础库Matplotlib画的不是很完美，今天借助高级可视化库pyecharts来重新再实现一下人民日报的各国疫情图。
 

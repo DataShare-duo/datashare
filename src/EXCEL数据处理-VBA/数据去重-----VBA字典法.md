@@ -1,3 +1,7 @@
+><p style="font-family: 'Microsoft YaHei', sans-serif; line-height: 1.5;">
+>作者：数据人阿多
+></p>
+
 在Excel里面数据去重方法比较多，目前用的比较多的有：
 
 #### 1. 数据--筛选---高级筛选

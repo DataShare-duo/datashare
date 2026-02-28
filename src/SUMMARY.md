@@ -87,7 +87,7 @@
         - [Python-基于hdfs路径统计hive表存储信息](Python数据处理/Python-基于hdfs路径统计hive表存储信息.md)
         - [Python-基于OpenList接口下载夸克网盘资源](Python数据处理/Python-基于OpenList接口下载夸克网盘资源.md)
         - [Python-基于pyhive库操作hive](Python数据处理/Python-基于pyhive库操作hive.md)
-
+		- [现代Python全栈分布式数据计算：Ray、Daft与Lance的探索](Python数据处理/20260228-现代Python全栈分布式数据计算：Ray、Daft与Lance的探索.md)
 		
         
         

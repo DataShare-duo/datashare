@@ -12,7 +12,7 @@ additional-css = ["blog.css"]
 mathjax-support = true
 additional-js = ["assets/fzf.umd.js", "assets/elasticlunr.js"]
 git-repository-url = "https://github.com/DataShare-duo/datashare"
-site-url = "/datashare"
+site-url = "/datashare/"
 
 [output.html.fold]
 enable = true    # whether or not to enable section folding

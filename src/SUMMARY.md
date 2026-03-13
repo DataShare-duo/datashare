@@ -224,6 +224,7 @@
 - [大模型相关]()
     - [尝试-gemini-cli，在本地开发俄罗斯方块](大模型相关/尝试-gemini-cli，在本地开发俄罗斯方块.md)
     - [基于DeepSeek，构建个人本地RAG知识库](大模型相关/基于DeepSeek，构建个人本地RAG知识库.md)    
+	- [OpenClaw使用体验](大模型相关/20260313-OpenClaw使用体验.md)
 
 
 ---

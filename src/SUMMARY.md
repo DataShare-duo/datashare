@@ -226,6 +226,7 @@
     - [基于DeepSeek，构建个人本地RAG知识库](大模型相关/基于DeepSeek，构建个人本地RAG知识库.md)    
 	- [OpenClaw使用体验](大模型相关/20260313-OpenClaw使用体验.md)
 	- [VibeCoding完全指南：2026年，我们用“感觉”写代码](大模型相关/20260320-VibeCoding完全指南：2026年，我们用“感觉”写代码.md)
+	- [Vibe Coding初体验：用AI辅助开发一款心情打卡小程序](大模型相关/20260326-Vibe_Coding初体验：用AI辅助开发一款心情打卡小程序.md)
 
 
 

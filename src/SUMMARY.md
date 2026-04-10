@@ -35,6 +35,8 @@
         - [Python-新晋包项目工具uv的简单尝试](Python基础库/Python-新晋包项目工具uv的简单尝试.md)
         - [Python-在指定文件夹安装三方库，并进行加载使用](Python基础库/Python-在指定文件夹安装三方库，并进行加载使用.md)
         - [Python-装饰器的灵活实现：带参数与不带参数](Python基础库/20260204-Python-装饰器的灵活实现：带参数与不带参数.md)
+		- [Python 与 Rust 类型参数对比：从 TypeVar 到泛型 \<T\>](Python基础库/20260410-Python与Rust类型参数对比：从TypeVar到泛型T.md)
+
 
 
 

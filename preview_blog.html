@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataShare 博客预览</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 20px; background: #f5f5f5; }
+        .container { max-width: 900px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h1 { text-align: center; color: #e45e28; }
+        .stats { text-align: center; color: #666; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📖 DataShare 博客列表生成成功！</h1>
+        <div class="stats">
+            <p><strong>总文章数：</strong>158 篇</p>
+            <p><strong>已标注日期：</strong>7 篇（按时间倒序）</p>
+            <p><strong>待标注日期：</strong>151 篇（随机排序）</p>
+        </div>
+        <h2>✅ 使用方法：</h2>
+        <ol>
+            <li><strong>构建博客：</strong><code>mdbook build</code></li>
+            <li><strong>本地预览：</strong><code>mdbook serve</code></li>
+            <li><strong>访问地址：</strong>http://localhost:3000/blog-index.html</li>
+        </ol>
+        <h2>💡 为文章添加日期：</h2>
+        <p>将文件名重命名为 <code>YYYYMMDD-文章标题.md</code> 格式，例如：</p>
+        <ul>
+            <li>原文件：<code>Python 装饰器详解.md</code></li>
+            <li>重命名为：<code>20260425-Python 装饰器详解.md</code></li>
+        </ul>
+        <p>然后运行 <code>python generate_blog_index.py</code> 更新索引。</p>
+        <h2>📋 已识别日期的文章：</h2>
+        <ul id="dated-posts"></ul>
+    </div>
+    <script>
+        const posts = [
+            {title: "告别焦虑，借助 AI 深化技术学习", date: "2026-04-21"},
+            {title: "Python 与 Rust 类型参数对比", date: "2026-04-10"},
+            {title: "Vibe Coding 初体验", date: "2026-03-26"},
+            {title: "VibeCoding 完全指南", date: "2026-03-20"},
+            {title: "OpenClaw 使用体验", date: "2026-03-13"},
+            {title: "现代 Python 全栈分布式数据计算", date: "2026-02-28"},
+            {title: "Python-装饰器的灵活实现", date: "2026-02-04"}
+        ];
+        const list = document.getElementById('dated-posts');
+        posts.forEach(p => {
+            const li = document.createElement('li');
+            li.textContent = `${p.date} - ${p.title}`;
+            list.appendChild(li);
+        });
+    </script>
+</body>
+</html>

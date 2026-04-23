@@ -113,7 +113,9 @@ def generate_blog_index(posts, output_path):
     for i, post in enumerate(all_posts):
         date_str = f'"{post["date"]}"' if post['date'] else 'null'
         comma = ',' if i < len(all_posts) - 1 else ''
-        posts_js.append(f'''    {{title: "{post['title'].replace('"', '\\"')}", path: "{post['path']}", date: {date_str}, category: "{post['category']}"}}{comma}''')
+        # 转义标题中的引号
+        safe_title = post['title'].replace('"', '\\"')
+        posts_js.append(f'    {{title: "{safe_title}", path: "{post["path"]}", date: {date_str}, category: "{post["category"]}"}}{comma}')
     
     # 获取所有分类
     categories = sorted(set(p['category'] for p in posts))

@@ -176,7 +176,8 @@
 
     - [Web]()
         - [Python中一个构建-web-页面的神奇库-streamlit](Web/Python中一个构建-web-页面的神奇库-streamlit.md)
-    
+		- [Python异步编程与CPU密集型任务的优雅解法](Web/20260424-Python异步编程与CPU密集型任务的优雅解法.md)
+
 
     
     

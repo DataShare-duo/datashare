@@ -26,16 +26,15 @@ p {/*段落*/
   margin:20px 5px;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1 {
   margin: 0.9em  0px;
   font-weight:bold;
   margin-top:30px;
-}
-
-h1 {
   font-size: 1.1em  ;
   border-bottom:2px solid rgb(228,94,40);
 }
+
+
 
 h1>a {
   font-size: 1.1em  ;
@@ -57,9 +56,12 @@ h1:after{  /*增加对h1标题后面的修饰*/
   border-right: 20px solid transparent;  
 }
 
-h2 a {
+h2 > a {
   /*font-size: 0.95em;*/
   color:#000000;
+  border-bottom:3px solid rgb(228,94,40);
+  font-size: 0.75em  ;
+  
 }
 
 h3 {

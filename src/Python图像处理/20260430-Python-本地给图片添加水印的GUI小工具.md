@@ -18,7 +18,7 @@ Photo Water Marker 的整体技术栈包含三大核心模块：
 * **GUI 客户端**：采用 Python 标准库 `tkinter`，零依赖，高度可移植
 * **图像处理内核**：采用 Python 生态中久经考验的 `Pillow`（PIL 的友好分支）库
 * **分发与交付**：采用工业级打包工具 `PyInstaller`，将 Python 脚本与运行时环境一同打包为 Windows 下的独立 `.exe` 可执行文件
-<img src="./images/20260430-photo_water_marker_gui_mermaid.png" alt="流程图" width="400">
+<img src="./images/20260430-photo_water_marker_gui_mermaid.png" alt="架构" width="400">
 
 # 图像处理逻辑深度解析
 

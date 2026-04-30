@@ -136,6 +136,8 @@
         - [Python-一个在本地给图片添加水印的小工具](Python图像处理/Python-一个在本地给图片添加水印的小工具.md)
         - [利用Python生成手绘效果的图片](Python图像处理/利用Python生成手绘效果的图片.md)
         - [利用Python实现二维码自由](Python图像处理/利用Python实现二维码自由.md)
+		- [Python-本地给图片添加水印的GUI小工具](Python图像处理/20260430-Python-本地给图片添加水印的GUI小工具.md)
+
 
 
 
